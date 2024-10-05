@@ -16,7 +16,7 @@ public class NumPalindrome
             digit = digit * 10 + r;
             n=n/10;
         }
-        if(digit == num)
+        if(digit == num
         {
             System.out.println(num+" is Palindrome");
         }else{

@@ -9,7 +9,7 @@ Write a Java program to check if a given number is a palindrome. A number is a p
 
 Program 03:
 ----------
-Write a program in Java to display the following pattern on the screen without using loop.
+Write a program in Java to display the following pattern on the screen using loop.
 @@@@@@@@
 @      @
 @      @

@@ -1,0 +1,182 @@
+Que-1)
+____________________-
+What is the output of the following Java Code?
+
+int a=9;
+float b = a/2;
+System.out.println(b);
+
+a 4.0
+b 4.5           //correct
+c 5.0
+d None of the above
+_____________________________________________________________________
+Que-2
+____________________
+What is the output of the below Java code snippet?
+
+char ch = 'A';//ASCII 65
+int a = ch + 1;
+ch = (char)a;
+System.out.println(ch);
+
+a 66
+b A
+c B          //correct
+d 65
+_________________________________________________________________________
+QUE-3)
+___________________
+What is the output of the below Java code snippet?
+
+float a = 8.2/2;
+System.out.println(a);
+
+a.
+4.1              
+b.
+8.1
+c.
+4
+d.
+Compiler error      //correct
+__________________________________________________________________________
+Que-4)
+__________________
+What is the output of the Java code snippet?
+
+int a = 260;
+byte b= (byte)a;
+System.out.println(b);
+
+a.
+0
+b.
+4        //correct
+c.
+255
+d.
+260
+__________________________________________________________________________
+Que-5)
+__________________
+What is the output of the Java code snippet?
+
+short a = (short)65540;
+System.out.println(a);
+
+a.
+0
+b.
+4       //correct
+c.
+65536
+d.
+65540
+__________________________________________________________________________
+Que-6)
+__________________
+public class MyFirstJavaProgram {
+ public static void main(String []args) {
+ int a = 300;
+ long b = a;
+ System.out.println(b);
+ }
+}
+
+ans = 300
+__________________________________________________________________________
+Que-7)
+________________
+public class WideningExample {
+ public static void main(String args[]){
+ char ch = 'C';
+ int i = ch;
+ System.out.println(i);
+ }
+}
+
+ans = 67
+_______________________________________________________________________
+Que-8)
+________________
+public class Sample {
+ public static void main(String[] args)
+ {
+ System.out.print("Y"+"O");
+ System.out.print('L');
+ System.out.print('O');
+ }
+}
+
+ans.
+YOLO
+__________________________________________________________________________
+Que-9)
+________________
+public class Sample2 {
+ public static void main(String[] args)
+ {
+ System.out.print("Y"+"O");
+ System.out.print('L' + 'O');
+ }
+}
+
+ans 
+YO155
+_________________________________________________________________________
+Que-10)
+________________
+class Sample3{
+ public static void main(String[] args)
+ {
+ int i = 100;
+ long l = i;
+ float f = l;
+ System.out.println("Int value " + i);
+ System.out.println("Long value " + l);
+ System.out.println("Float value " + f);
+ }
+}
+
+ans.
+Int value 100
+Long value 100
+Float value 100.0
+________________________________________________________________________
+Que-11)
+_______________
+public class Sample4{
+public static void main(String[] argv)
+{
+char ch = 'c';
+int num = 88;
+ch = num;
+}
+}
+
+ans.
+error: incompatible types: possible lossy conversion from int to char
+        ch = num;
+________________________________________________________________________
+Que-12)
+_______________
+class Sample5{
+public static void main(String args[])
+{
+byte b = 42;
+char c = 'a';
+short s = 1024;
+int i = 50000;
+float f = 5.67f;
+double d = .1234;
+double result = (f * b) + (i / c) - (d * s);
+System.out.println("result = " + result);
+}
+}
+
+ans.
+
+result = 627.24231752577    //manual
+result = 626.7784146484375  //compiler
+________________________________________________________________________

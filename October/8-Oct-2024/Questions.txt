@@ -1,0 +1,21 @@
+Programming Questions
+________________________________________________________________________
+QUE-1)
+-----------
+Write a java program to covert string to double using parseDouble() and multiply two Floating -point Numbers and display the result by taking input from the command line argument?
+-----------------------------------------------------------------------
+Que-2)
+-----------
+Write a java program to find the ASCII value of a character
+For Example
+Output sholud be in below formart
+The ASCII value of a is :97
+----------------------------------------------------------------------
+Que-3)
+-----------
+Write a java program to find the profit and loss by following the formula
+Profit and loss Formulas – 
+Profit = SP – CP
+Loss = CP – SP
+Profit percentage = (Profit /Cost Price) x 100
+Loss percentage = (Loss / Cost price) x 100

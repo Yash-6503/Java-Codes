@@ -1,0 +1,142 @@
+Que-1) 
+--------------------------------------------------------------
+public class Literals_Integers 
+ {
+ public static void main (String args[])
+ {
+ int decimal_int = 1234;
+ int octal_int = 077;       // 8*7 + 7*1 = 63
+ int hexadec_int = 0x1ff2;  //1*4096 + 15*256 + 15*16 + 2*1 = 8178
+ int binary_int = 0b1010101;    // 1*64 + 1*16 + 1*4 + 1*1 = 85
+ System.out.println("This is a Decimal Literal: "+decimal_int);
+ System.out.println("This is an Octal Literal: "+octal_int);
+ System.out.println("This is a Hexa Decimal Literal: "+hexadec_int);
+ System.out.println("This is a Binary Literal: "+binary_int);
+ }
+ }
+[What will be the output of the above program]
+
+Output:
+
+This is a Decimal Literal: 1234
+This is an Octal Literal: 63
+This is a Hexa Decimal Literal: 8178
+This is a Binary Literal: 85
+_________________________________________________________________________
+Que-2) 
+--------------------------------------------------------------
+public class Literals_Float
+{
+ public static void main (String args[])
+ {
+ float val_float = 1.7732f;     //1.7732
+ double val_double = 1.7732d;   //1.7732
+ float val_exponent =  123E4f;  //123000
+ System.out.println("This is a Floating Point Literal"+val_float);
+ System.out.println("This is a Decimal Literal"+val_double);
+ System.out.println("This is an Exponential 
+Literal"+val_exponent);
+ }
+} 
+[What will be the output of the above program]
+
+output
+
+This is a Floating Point Literal 1.7732
+This is a Decimal Literal 1.7732
+This is an Exponential Literal 1230000.0
+_________________________________________________________________________
+
+Que-3)
+---------------------------------------------------------------
+public class AutomaticTypeConversion
+{
+ public static void main (String args[])
+ {
+ int intVariable = 100;         //100
+ long longVariable = intVariable;   //100
+ float floatVariable = longVariable; //100.0
+ System.out.println ("Integer Value is : " + intVariable);
+ System.out.println ("Float Value is : " + floatVariable);
+ System.out.println ("Long Value is : " + longVariable);
+ }
+}
+[What will be the output of the above program]
+
+output
+
+Integer Value is : 100
+Float Value is : 100.0
+Long Value is : 100
+___________________________________________________________________________
+Que-4)
+---------------------------------------------------------------
+public class ExplicitTypeCasting
+{
+ public static void main (String[]args)
+ {
+ double doubleVariable = 100.04;    //100.04
+ long longVariable = (long) doubleVariable;     //100
+ int intVariable = (int) longVariable;      //100
+ System.out.println ("Double Value is : " + doubleVariable);
+ System.out.println ("Long Value is : " + longVariable);
+ System.out.println ("Integer Value is : " + intVariable);
+ }
+}
+[What will be the output of the above program]
+
+output
+
+Double Value is : 100.04
+Long Value is : 100
+Integer Value is : 100
+________________________________________________________________________
+Que-5)
+----------------------------------------------------------------
+class Sample
+{
+ public static void main(String[] args) 
+ {
+ int a=10;
+ float b=4.5f;
+ double c=5.2;
+ long d=(long)-8.98;
+System.out.println(a);  //10
+System.out.println(b);  //4.5
+System.out.println(c);  //5.2
+System.out.println(d);  //-8
+}
+}
+[What will be the output of the above program]
+
+output
+10
+4.5
+5.2
+-8
+_____________________________________________________________________________
+Que-6)
+---------------------------------------------------------------
+public class Sample {
+public static void main(String[] args) {
+int a=10;
+float b=4.5f;
+double c=5.2;
+long d=378293L;
+ long e=(long)-8.98;
+System.out.println(a);      //10
+System.out.println(b);      //4.5
+System.out.println(c);      //5.2   
+System.out.println(d);      //378293
+ System.out.println(e);     //-8
+Sample.main("java");
+}
+}
+
+output
+10
+4.5
+5.2
+378293
+-8
+

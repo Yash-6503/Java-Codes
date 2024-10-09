@@ -2,6 +2,8 @@
 Non-Static Methods in Java
 */
 
+package com.classes;
+
 public class NonStaticMethod
 {
     public static void main(String args[])

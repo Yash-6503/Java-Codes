@@ -1,6 +1,9 @@
 /*
 Multiple main methods inside main method
 */
+
+package com.classes;
+
 public class MultipleMainMethods 
 {
     public static void main(String args[])

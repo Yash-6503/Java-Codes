@@ -2,6 +2,8 @@
 Static Methods in Java
 */
 
+package com.classes;
+
 public class staticMethod
 {
     public static void main(String args[])

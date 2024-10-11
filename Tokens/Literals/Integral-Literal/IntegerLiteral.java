@@ -1,6 +1,7 @@
 /*
 Integer Literal is a constant value that is assigned to the integer data type variable.
 it takes 32 bits in memory.
+it accepts values from -2^31 to 2^31-1.
 */
 
 package com.classes;

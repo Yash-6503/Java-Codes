@@ -8,13 +8,13 @@ public class Test
 		int a;
 		if(x) a = x ? 1: 2;
 		else a = x ? 3: 4;
-		System.out.println(a);      //1
+		System.out.println(a);
 	}
 }
 
 ans.
 a=1
------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 
 Q2) Find the output of the following program
 public class Test
@@ -25,15 +25,13 @@ public class Test
 		int a;
 		if(x) a = x ? 1: 2;
 		else a = x ? 3: 4;
-		System.out.println(a);      //4
+		System.out.println(a);
 	}
 }
 
-ans.
-4
-
------------------------------------------------------------------------------------------------------------------
-
+ans. 
+a=4
+-------------------------------------------------------------------------------------
 
 Q3) Find the output of the following program
 class Test 
@@ -42,15 +40,13 @@ class Test
 	{
 		int i = 15;
 		int j = 21;
-		System.out.println((i < j) ? i++ : j--);        //15
+		System.out.println((i < j) ? i++ : j--);
 	}
 }
 
-ans.
-15
-
------------------------------------------------------------------------------------------------------------------
-
+ans. 
+i=15
+---------------------------------------------------------------------------------
 
 Q4) Find the output of the following program
 public class Test
@@ -59,22 +55,21 @@ public class Test
     {
     char a = 'A';
     int i = 1;
-    System.out.print(true ? a : 0);         //A
-    System.out.print(false ? i : a);        //65
+    System.out.print(true ? a : 0);
+    System.out.print(false ? i : a);
     }
 }
 
 ans.
 A65
-
------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 
 Q5) Find the output of the following program
 class Test64 
 {
 	public static void main(String[] args) 
 	{
-		if((call(3)) || (call(7)))
+		if((call(3)) ||(call(7)))
 		{
 			System.out.println("Result is true");			
 		}
@@ -103,15 +98,14 @@ i < 5
 Result is true
 i>=5
 i>=5
------------------------------------------------------------------------------------------------------------------
-
+---------------------------------------------------------------------------------
 
 Q6) Find the output of the following program
 class Test 
 {
 	public static void main(String[] args) 
 	{
-		boolean b = false;
+		boolean b=false;
 		if(b=true)
 		{
 		System.out.println("Assigning not comparing..");
@@ -125,7 +119,7 @@ class Test
 
 ans.
 Assigning not comparing..
------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
 
 Q7) Find the output of the following program
 
@@ -135,16 +129,18 @@ public class Test
     {
        byte i=10;
        byte j = 10;
-       byte z = i * j;  //error
+       byte z = i * j;      //error
        System.out.println(z);
 
     }
 }
 
 ans.
- error: incompatible types: possible lossy conversion from int to byte
------------------------------------------------------------------------------------------------------------------
-
+error: incompatible types: possible lossy conversion from int to byte
+Note:
+While performing Artmetic operations on any datatype the datatype must holds 32(bits) 
+ex. int, long, float, double
+-------------------------------------------------------------------------------------------
 
 Q8) Find the output of the following program
 
@@ -155,14 +151,13 @@ public class Test
              String a = "a";
              int b = 1;
              String c = a + b;
-             System.out.println(c);
+             System.out.println(c);         //a1
        }
 }
 
 ans.
 a1
------------------------------------------------------------------------------------------------------------------
-
+-----------------------------------------------------------------------------------------------
 Q9) Find the output of the following program
 public class Test
 {
@@ -173,11 +168,11 @@ public class Test
           int c = -12;
           float d = 9.0F;
           char e = 'A';
-          System.out.println(a < b);
-          System.out.println(d < c);
-          System.out.println(e <= a);
-          System.out.println(a > d);
-          System.out.println(c >= e);
+          System.out.println(a < b);        //true
+          System.out.println(d < c);        //false
+          System.out.println(e <= a);       //false
+          System.out.println(a > d);        //false
+          System.out.println(c >= e);       //false
      }
 }
 
@@ -187,7 +182,7 @@ false
 false
 false
 false
------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
 
 Q10) Find the output of the following program
 public class Test
@@ -204,8 +199,8 @@ public class Test
 }
 
 ans.
-a<f
------------------------------------------------------------------------------------------------------------------
+a < f
+--------------------------------------------------------------------------------------------------------
 
 Q11) Find the output of the following program
 
@@ -225,7 +220,7 @@ public class Test
 
 ans.
 error: bad operand types for binary operator '>'
------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
 
 Q12) Find the output of the following program
 
@@ -235,17 +230,17 @@ public class Test
         {
                int z = 5;
                if(++z > 5 || ++z > 6) z++;   
-               System.out.println(z);           //7
+               System.out.println(z);   //7
                z = 5;
-               if(++z > 5 | ++z > 6) z++;   
-               System.out.println(z);           //8
+               if(++z > 5 | ++z > 6) z++;   //8  
+               System.out.println(z);
         }
 }
 
 ans.
 7
 8
------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
 
 Q13) Find the output of the following program
 
@@ -260,9 +255,9 @@ public class Test
 }
 
 ans.
-test = test
+test = true
 val = 0
------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
 
 Q14) Find the output of the following program
 public class Test 
@@ -274,13 +269,13 @@ public class Test
            int b = 1;
            double c = 2D;
            a = x ? b : c;
-           System.out.println(a);   //1
+           System.out.println(a);
       }
 }
 
 ans.
 error: incompatible types: possible lossy conversion from double to int
------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
 
 Q15) Find the output of the following program
 
@@ -291,13 +286,13 @@ public class Test
            int x = 5;
            x += 10; 
            x = x + 10;
-		System.out.println(x);  //25
+		   System.out.println(x);   //25
       }
 }
 
 ans.
 25
------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 
 Q16) Find the output of the following program
 public class Test 
@@ -312,7 +307,7 @@ public class Test
 
 ans.
 everything
------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------
 
 Q17) Find the output of the following program
 
@@ -334,7 +329,7 @@ public class Test
 
 ans.
  72 foo425 86foo
------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
 
 Q18) Find the output of the following program
 
@@ -351,8 +346,8 @@ class Test
 }
 
 ans.
-s is a String
------------------------------------------------------------------------------------------------------------------
+compilation error
+-------------------------------------------------------------------------------------------------------------
 
 Q19) Find the output of the following program
 public class Test
@@ -362,24 +357,22 @@ public class Test
               String s = "123";
               s += "45";
               s += 67;
-              System.out.println(s);
+              System.out.println(s);        
               int b = 2;
-              System.out.println("" + b + 3);
+              System.out.println("" + b + 3); 
         }
 }
 
 ans.
-1234567
- 23
-
------------------------------------------------------------------------------------------------------------------
+compilation error
+----------------------------------------------------------------------------------------------------------
 
 Q20)  Find the output of the following program
 public class Test
 {
         public static void main(String[] argv)
         {
-            while(false)
+              while(false)
 	      {
 	      System.out.println("Not Executed!!!");
 	      }
@@ -387,5 +380,4 @@ public class Test
 }
 
 ans.
-error: unreachable statement
------------------------------------------------------------------------------------------------------------------
+compilation error

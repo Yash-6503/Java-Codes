@@ -1,0 +1,300 @@
+Question: 1
+What are the features reused using Inheritance in Java?
+
+a) Methods
+
+
+b) Variables
+
+
+c) Constants
+
+d) All the above        //correct answer
+
+===========================================================================
+
+Question: 2
+
+What will be the output of the following Java program?
+class A
+{
+    int i;
+    void display()
+    {
+        System.out.println(i);      //i=1
+    }
+}
+
+class B extends A
+{
+    int j;
+    void display()
+    {
+        System.out.println(j);      //j=2
+    }
+}
+
+class inheritance_demo
+{
+    public static void main(String args[])
+    {
+        B obj = new B();
+        obj.i=1;
+        obj.j=2;
+        obj.display();
+    }
+}
+
+
+a) 0
+
+
+b) 1
+
+
+c) 2                     //correct answer
+
+
+d) Compilation Error       
+
+============================================================================
+
+Question: 3
+You should use Inheritance when there is an IS-A relationship
+between classes. State TRUE or FALSE
+
+Ans.
+TRUE
+
+=======================================================================
+
+Question: 4
+What will be the output?
+
+class Base
+{
+    int x = 19;
+}
+
+class Child extends Base
+{
+    int x = 20;
+    void shows()
+    {
+        System.out.println(“The base class data member (x) by Super Keyword :” + super.x);
+        System.out.println(“The child class data member :” + x);
+    }
+
+    public static void main(String args[]) 
+    {
+        Child obj = new Child();
+        obj.shows();       
+    }
+}
+
+
+a) The base class data member (x) by Super Keyword :19
+The child class data member :20
+
+
+b) The base class data member (x)by Super Keyword :0
+The child class data member :0
+
+
+Ans.
+Correct Answer : a
+
+==============================================================
+
+Question: 5
+Find Superclass and Subclass in the below Java code snippet?
+
+class B
+{
+    void show(){}
+}
+
+class A
+{
+    void hide(){}
+}
+
+
+
+a) B is superclass and A is subclass.
+
+
+b) A is superclass and B is a subclass.
+
+c) There is no superclass or subclass present.      //correct answer
+
+d) None
+
+========================================================================
+
+Question: 6
+Which is the keyword used to implement inheritance in Java?
+
+
+a) extends      //correct answer
+
+
+b) implements
+
+
+c) instanceof
+
+
+d) None
+
+
+===============================================================================
+
+Question: 7
+The class that is being inherited or subclassed is called _.
+
+
+a) Subclass     
+
+
+b) Superclass       //correct answer
+
+
+=================================================================================
+
+Question: 8
+Find Superclass and Subclass in the below Java program?
+
+class Liquid
+{
+    void pour(){}
+}
+
+class Juice extends Liquid
+{
+    void filter(){}
+}
+
+
+
+a) The Liquid is a superclass and Juice is a subclass.      //correct answer
+
+
+b) The Liquid is a Subclass and Juice is a Superclass.
+
+
+c) There is no superclass or subclass
+
+
+d) None
+
+========================================================================
+
+Question: 9
+
+class X
+{
+    public void A()
+    {
+        System.out.println(“123”);
+    }
+}
+
+class Y extends X
+{
+    public void B()
+    {
+        System.out.println(“456”);
+    }
+}
+
+class Z extends X
+{
+    public void C()
+    {
+        System.out.println(“789”);
+    }
+}
+
+class V extends Y
+{
+    public void D()
+    {
+        System.out.println(“10”);
+    }
+}
+
+public class Hybrid1
+{
+    public static void main(String[] args)
+    {
+        Y obj = new Y();
+        V obj2 = new V();
+        obj.A();
+        obj2.B();
+    }
+}
+
+
+a)
+123
+10
+
+
+b)
+789
+10
+
+
+c)
+456
+123
+
+
+d)              //correct answer
+123
+456
+
+==============================================================================
+
+Question: 10
+What will be the output of the following Java program?
+
+class A 
+{
+    int i;
+}    
+
+class B extends A 
+{
+    int j;
+    void display() 
+    {
+        super.i = j + 1;
+        System.out.println(j + " " + i);
+    }
+}    
+
+public class inheritance 
+{
+    public static void main(String args[])
+    {
+        B obj = new B();
+        obj.i=1;
+        obj.j=2;   
+        obj.display();     
+    }
+}
+
+
+
+a) 2 2
+
+
+b) 3 3
+
+
+c) 2 3      //correct answer
+
+
+d) 3 2

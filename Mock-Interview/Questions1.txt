@@ -1,0 +1,51 @@
+1. What is java?
+   Why you choose Java.
+2. What is JDK?
+3. Draw the JDK Diagram?
+4. How many data types we have?
+5. Ascending order of numeric data types?
+6. What is Type Casting?
+Types of type Casting:
+2 types:
+i)Widening Type Casting
+ii)Narrowing Type Casting
+7. What is JVM Architechture?
+8. How many class loaders we have?
+9. How many .(dot) extensions will create after executing the one code?
+10.Can I take multi classes in single java file?
+( a class has two access modifiers public , default modifiers )
+11.How many token we have?
+12.What are access modifiers we have?
+13.How many access modifiers tokens we have?
+14.Explain class Structure?(stste and behavior of PEN class).
+15.Description if main method.
+16.What is meant by "WORA" in the context of JAVA?
+17.Explain how JAVA achieves Platform Independence?
+18.What role does that JVM play in making java platform independent?
+19.How do byte code and the java compiler contribute to platform independence?
+20.Explain the process of executing a Java program on different platforms.
+21.What is the difference between platform independence and platform-specific
+   features on JAVA?
+22.What is a literal in JAVA?
+23.How are integer literals represented in JAVA?
+24.Explain the difference between a decimal literal and an Octal literal in
+   Java?
+25.What is a Floating-point literal, and how is it written in JAVA?
+26.What is an instance variable in Java, and how does it differ from a 
+   local variable?
+27.Explain the concept of a static variable. How is it different from an
+   instance variables
+28.What is a parameter variable in the context of methods in Java?How are 
+   parameter variables used?
+29.Define local variable in Java.How is the scope of a local variable 
+   determined, and what are its limitations?
+30.Discuss the scope of instance variables,static variables,parameter variables and
+   local variables
+   How does the scope of each type of variable affect its visibility in 
+   different parts of the Java program?
+31.How can you initialize an instance variable in java with a user-defined
+   value during object creation?
+32.Explain how constructors can be utilized to set user-defined values for
+   instance variables in Java class.
+33.What is the role of setter methods,and how do they facilitate the 
+   assignment of user-defined values to instance variables?

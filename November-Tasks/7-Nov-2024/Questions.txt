@@ -1,0 +1,132 @@
+1) create base class as Student
+
+ Attribute :-
+--------------
+
+int studentId
+string name
+long mobile
+
+define parametrized constructor to initialize the  instance variable
+
+method:-
+---------
+return type:-void
+method name:- display
+behavior:- this method will print the detail of student
+
+-----------
+
+create derived class name as JobGuaranteeStudent
+
+ Attribute :-
+
+boolean placementGuarantee
+
+
+define parametrized constructor to initialize the  instance variable
+and also parent class properties
+
+
+method:-
+
+method:-
+---------
+return type:-void
+method name:- displayStudentInfo
+behavior:- this method will print the detail of student and also placementGuarantee true or false
+
+------------------------------
+
+define Tester class here use main method to test  your logic
+
+======================================================================================
+
+2)create base class as Shape
+
+ Attribute :-
+--------------
+
+string color
+
+
+define parametrized constructor to initialize the  instance variable
+
+method:-
+---------
+return type:-void
+method name:- displayColor
+behavior:- this method will print the color of a shape
+
+-----------
+
+create derived class name as Circle
+
+ Attribute :-
+
+double radius 
+
+
+define parametrized constructor to initialize the  instance variable
+and also parent class properties
+
+
+method:-
+
+method:-
+---------
+return type:-double
+method name:- area
+behavior:- this method will calculate the area of circle and return the area
+
+------------------------------
+
+define Tester class here use main method to test  your logic
+
+
+
+=================================================================================================
+
+
+3)create base class as Employee
+
+ Attribute :-
+--------------
+
+string name
+double salary
+
+
+define parametrized constructor to initialize the  instance variable
+
+method:-
+---------
+return type:-void
+method name:- work
+behavior:- this method will print the message that along with person name the person is working
+"Rajesh is working"
+
+
+-----------
+
+create derived class name as Manager
+
+ Attribute :-
+
+String department 
+
+
+define parametrized constructor to initialize the  instance variable
+and also parent class properties
+
+
+method:-
+---------
+return type:-void
+method name:- manage
+behavior:- this method will print the person name is managing the department name
+"Rajesh is managing sales Department"
+
+------------------------------
+
+define Tester class here use main method to test  your logic

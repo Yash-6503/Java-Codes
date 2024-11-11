@@ -1,0 +1,515 @@
+
+MCQs based on Inheritance topic solving and non-solving
+
+---------------------------------------------------------------------------
+
+Question: 1
+Which access modifier allows a subclass in a different package to access a superclass member?
+
+A)private
+
+B)protected         //correct answer
+
+C)public
+
+D)default
+
+E)none
+
+========================================================================
+
+Question: 2
+Which of these keywords is used to refer to member of base class from a sub class?
+
+A)upper
+
+B)super             //correct answer
+
+C)this
+
+D)none
+
+E)this()
+
+=========================================================================
+
+Question: 4
+class A
+{
+int i;
+void display()
+{
+System.out.println(i);
+}
+}
+class B extends A
+{
+int j;
+void display()
+{
+System.out.println(j);
+}
+}
+class inheritance_demo
+{
+public static void main(String args[])
+{
+B obj = new B();
+obj.i=1;
+obj.j=2;
+obj.display();
+}
+}
+
+
+A)0
+
+B)1
+
+C)2             //correct answer
+
+D)3
+
+D)Compilation Error
+
+===========================================================================
+
+Question: 5
+Determine output:
+class A{
+public void printValue(){
+System.out.println(“Value-A”);
+}
+}
+class B extends A{
+public void printNameB(){
+System.out.println(“Name-B”);
+}
+}
+class C extends A{
+public void printNameC(){
+System.out.println(“Name-C”);
+}
+}
+
+public class Test{
+public static void main (String[] args){
+B b = new B();
+C c = new C();
+newPrint(b);
+newPrint(c);
+}
+public static void newPrint(A a){
+a.printValue();
+}
+}
+
+
+A)Value-A Name-B
+
+B)Value-A Value-A       //correct answer
+
+C)Value-A Name-C
+
+D)Name-B Name-c
+
+E)Name-A Name-B
+
+=========================================================================
+
+Question: 6
+Which method in the superclass can be overridden in the subclass?
+
+A)Final methods
+
+B)Static methods
+
+C)Private methods
+
+D)Non-final and non-private methods     //correct answer
+
+E)All of the Above-mentioned
+
+=============================================================================
+
+Question: 7
+What is the superclass of all classes in Java?
+
+A)Object            //correct answer
+
+B)Base
+
+C)Parent
+
+D)Super
+
+E)Constructors
+
+==================================================================================
+
+Question: 8
+What will be the output of the following Java program?
+
+class A 
+{
+    int i;
+}    
+class B extends A 
+{
+    int j;
+    void display() 
+    {
+        super.i = j + 1;
+        System.out.println(j + " " + i);
+    }
+}    
+class inheritance 
+{
+    public static void main(String args[])
+    {
+        B obj = new B();
+        obj.i=1;
+        obj.j=2;   
+        obj.display();     
+    }
+}
+
+
+A)2 2
+
+B)3 3
+
+C)2 3       //correct answer
+
+D)3 2
+
+E)None
+
+===================================================================================
+
+Question: 10
+Which keyword is used to call the superclass constructor from the subclass constructor?
+
+A)init
+
+B)super         //correct answer
+
+C)base
+
+D)this
+
+E)None
+
+===================================================================================
+
+Question: 11
+What is the output of the following code snippet?
+
+class A {
+int x = 5;
+
+A() {
+    printValue();
+}
+
+void printValue() {
+    System.out.println("Value from A: " + x);
+}
+}
+
+class B extends A {
+int x = 10;
+
+void printValue() {
+    System.out.println("Value from B: " + x);
+}
+}
+
+public class Main {
+public static void main(String[] args) {
+A obj = new B();
+}
+}
+
+
+A)Value from A: 5
+
+B)Value from B: 10
+
+C)Value from B: 0           //correct answer
+
+D)Compilation error
+
+E)Value from A: 10
+
+=================================================================================
+ 
+Question: 13
+What will be the output of the following Java program?
+
+class A 
+{
+    public int i;
+    public int j;
+    A() 
+    {
+        i = 1;
+        j = 2;
+}
+}    
+class B extends A 
+{
+    int a;
+    B() 
+    {
+        super();
+    } 
+}    
+class super_use 
+{
+    public static void main(String args[])
+    {
+        B obj = new B();
+        System.out.println(obj.i + " " + obj.j)     //error ; missing  
+    }
+}
+
+
+A)1 2
+
+B)1 2
+
+C)Runtime Error
+
+D)Compilation Error     //correct answer [; missing on line no. 273/26]
+
+E)No output
+
+=============================================================================
+
+Question: 14
+Which of this keyword must be used to inherit a class?
+
+A)super
+
+B)this
+
+C)extent
+
+D)extends       //correct answer
+
+E)none
+
+====================================================================================
+
+Question: 16
+Can a subclass inherit the constructors of its superclass?
+
+A)No, constructors cannot be inherited.     //correct answer
+
+B)Yes, but only if the subclass is in the same package as the superclass.
+
+C)Yes, constructors are automatically inherited from the superclass.
+
+D)Yes, but only if the subclass explicitly specifies using the extends keyword.
+
+E)none
+
+=================================================================================
+
+Question: 17
+Which of these is correct way of inheriting class A by class B?
+
+A)class B + class A {}
+
+B)class B inherits class A {}
+
+C)class B extends A {}              //correct answer
+
+D)class B extends class A {}
+
+E)class B Implements class A {}
+
+===============================================================================
+
+Question: 18
+What is inheritance in Java?
+
+
+A)The process of creating multiple instances of a class
+
+B)The process of creating a new class from an existing class        //correct answer
+
+C)The process of reusing code from a superclass
+
+D)The process of encapsulating data within a class
+
+E)All of the above
+
+=================================================================================
+
+Question: 19
+In Java, which keyword is used to implement inheritance between classes?
+
+A)extends           //correct answer
+
+B)implements
+
+C)inherits
+
+D)uses
+
+E)extend
+
+===============================================================================
+
+Question: 20
+In Java, if a class does not explicitly extend any other class, what class does it implicitly extend?
+
+A)Object            //correct answer
+
+B)Main
+
+C)Parent
+
+D)Superclass
+
+E)None
+
+==========================================================================
+
+Question: 21
+In Java, which keyword is used to access a static member of the superclass from the subclass?
+
+A)this
+
+B)super
+
+C)static
+
+E)class         //correct answer
+
+F)None
+
+==============================================================================
+
+Question: 22
+Which of the following statements about constructors in subclasses is correct?
+
+A)A subclass can have only one constructor.
+
+B)A subclass constructor can call both the superclass constructor and another constructor in the same subclass.     //correct answer
+
+C)A subclass constructor cannot call any other constructor.
+
+D)A subclass constructor can call only the default constructor of the superclass.
+
+
+================================================================================
+
+Question: 23
+Which of the following is not a benefit of using inheritance in Java?
+
+A)Code reusability
+
+B)Polymorphism
+
+C)Encapsulation             //correct answer
+
+D)Easy maintenance and extension of code
+
+E)All
+
+===================================================================================
+
+Question: 24
+class A{
+A(String s){}
+
+  A(){}
+}
+
+class B extends A{
+B(){}
+B(String s){
+super(s);
+}
+void test(){
+// insert code here
+}
+}
+
+Which of the below code can be insert at line 7 to make clean compilation ?
+
+A)A a = new B();        //correct answer
+
+B)A a = new B(5);
+
+C)A a = new B(String s);
+
+D)1 2 & 3
+
+E)none
+
+=============================================================================================
+
+Question: 25
+What is the concept in Java that allows a class to have multiple subclasses?
+
+A)Polymorphism
+
+B)Encapsulation
+
+C)Inheritance           //correct answer
+
+D)Multiple inheritance
+
+E)All
+
+=================================================================================
+ 
+Question: 26
+What is the purpose of the super keyword in Java?
+
+
+A)To invoke a method from the superclass        //correct answer
+
+B)To create an instance of the superclass
+
+C)To access private members of the superclass
+
+D)To hide a method in the superclass
+
+E)All
+
+==============================================================================
+
+Question: 28
+In Java, a subclass can have how many direct superclasses (i.e., immediate parent classes)?
+
+A)One       //correct answer
+
+B)Two
+
+C)Three
+
+D)Unlimited
+
+E)five
+
+============================================================================
+
+Question: 29
+In Java, can a subclass access private members (fields and methods) of its superclass?
+
+A)Yes, always
+
+B)Yes, but only if the subclass is in the same package as the superclass
+
+C)No, private members are not accessible in subclasses      //correct answer
+
+D)Yes, but only if the subclass uses the super keyword
+
+E)none
+
+=============================================================================

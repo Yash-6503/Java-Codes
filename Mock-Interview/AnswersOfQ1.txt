@@ -1,0 +1,820 @@
+1. What is java?
+
+-> java is a programming language.
+-> Java is a high-level, object-oriented programming language.
+-> Created by james gosling at Sun Micro-systems.
+-> It is designed to be Platform Independence.
+-> This principle is famously captured in the slogan "Write Once, Run Anywhere" (WORA). 
+-> Highly secured 
+
+   Why you choose Java.
+-> It is widely used programming language in the world
+-> Platform Independence (WORA)
+-> Highly secured 
+-> Career opportunities are more
+-> It is mosty used in web developement , Android developement, Desktop applications developement
+
+
+2. What is JDK?
+
+-> The Java Development Kit (JDK) is a software development kit that provides the tools
+   necessary for developing Java applications.
+-> The Java Development Kit (JDK) is a software package that provides everything you need to develop Java applications. It includes:
+
+    Java compiler (to turn Java code into bytecode),
+    JVM (Java Virtual Machine) (to run Java programs),
+    Libraries (for common tasks like networking, file handling),
+    Development tools (for debugging, documentation, and packaging).
+    In short, the JDK is used to write, compile, and run Java programs.
+
+
+It stands for Java Devleopment Kit. It is a developer version that
+means by using JDK we can develop as well as execute our java 
+programs.
+In order to develop and execute it supports various JDK tools which are as follows :
+
+ a) javac	: java compiler, responsible for compilation.
+ b) java	: Java launcher,responsible for executing java 
+                  program.
+ c) jdb		: java debugger, for debugging purpose
+ d) jconsole	: java Console, to display the output in the 
+                  console.
+ e) javap	: java Profiler, To get the details of a class
+ f) javadoc	: Java documention, for Generating java 
+                  documentation.
+
+
+
+3. Draw the JDK Diagram?
+
+-> --------------------------------------------------------------
+       |  ---------------------------------------------------        | 
+       |  |  |------------------------------------           |       |
+       |  |  |                                   |           |       |
+       |  |  |                                   |           |       |
+       |  |  |                                   |           |       |
+       |  |  |                                   |           |       | 
+       |  |  |                                   |           |       |
+       |  |  |   Class loader                    |           |       |
+       |  |  |   Runtime data areas              |+ Class    |+ JDK  |
+       |  |  |   Executing engine                | Libraries |  Tools|
+       |  |  |   JIT Compiler                    |           |       |
+       |  |  |   Interpreter                     |           |       |
+       |  |  |                                   |           |       |
+       |  |  |                                   |           |       |
+       |  |  |                                   |           |       |
+       |  |  |                                   |           |       |
+       |  |  |                                   |           |       |
+       |  |  ----------------|JVM|---------------   	     |       |
+       |  -------------------------|JRE|----------------------       |
+        -----------------------------------|JDK|---------------------
+
+  JDK:- JRE(java runtime envoirment)+JDK
+  JRE:- JVM + Class Libraries
+  JVM:- Class loader, Runtime data areas, Execitng engine, JIT compiler.
+
+
+4. How many data types we have?
+
+->  1> Primitive Data Types: 8 types (byte, short, int, long, float, double, char, boolean).
+    2> Reference Data Types: Includes Class, Interface, Array, and Enum.
+
+
+5. Ascending order of numeric data types?
+
+-> 1. byte  -    8 bits - 1 byte     range -128 to 127 
+   2. short -   16 bits - 2 byte     range -32768 to 32767
+   3. int   -   32 bits - 4 byte     range -2^31 to 2^31 - 1
+   4. long  -   64 bits - 8 byte     range: -2^63 to 2^63 - 1 
+   5. float -   32 bits - 4 byte     Precision: 6-7 decimal digits
+   6. double-   64 bits - 8 byte     Precision: 15-16 decimal digits
+
+
+6. What is Type Casting?
+
+-> Type Casting in Java refers to the process of converting a value from one data type to another.
+
+Types of type Casting:
+2 types:
+i)Widening Type Casting (Implicit)
+
+-> This happens automatically when a smaller data type is converted to a larger data type.
+
+ii)Narrowing Type Casting (Explicit)
+
+-> This type of casting requires you to explicitly specify the conversion when going from a larger data type to a smaller one.
+
+7. What is JVM Architechture?
+
+-> The java virtual machine (JVM) architecture is layered structure of JVM which is 
+   a software that interpreter and execute java code.The JVM architecture is made up of three main components:
+
+   Class loader: Finds and organizes the Java classes needed by the program
+   Runtime data area: Stores memory for different components of program execution
+   Execution engine: Converts Java code into a language that the computer can understand and execute 
+   The execution engine has two parts:
+   Interpreter: Reads byte code line by line, using a dictionary to convert it into machine instructions 
+   Just-In-Time (JIT) Compiler: Translates and optimizes code segments that are frequently used 
+   The JVM also includes a garbage collector (GC) that removes unused objects from the heap memory. 
+  
+
+8. How many class loaders we have?
+
+
+9. How many .(dot) extensions will create after executing the one code?
+
+->  Java compiler only create one file that is .
+ 
+   class file. But you must have one public class in a java file to compile this otherwise error will occur,and file name must be same as public class name.
+   If you have more then one class in a java file then more class file will crea
+
+
+10.Can I take multi classes in single java file?
+( a class has two access modifiers public , default modifiers )
+
+->  yes definitely. You can include as many classes as you want in your single java file. 
+   out of all there should be one class which you have to declare as public and save your file with that classname.
+   Though you have included so many classes in your single file but, you will get separate 
+
+
+11.How many token we have?
+
+->  Types of Tokens in Java
+   Java has five main types of tokens:
+
+   1.Keywords  -> In Java, keywords are reserved words that have a predefined meaning in the language syntax.
+   2.Identifiers -> In Java, an identifier is a name used to identify variables, methods, classes, packages, and other entities.
+                     Identifiers are essential in programming because they provide a way to refer to different components in the program.
+   3.Literals -> In Java, a literal is a fixed value used directly in the source code that represents a specific type of data.
+   4.Operators -> In Java, operators are special symbols or keywords used to perform operations on variables, values, or expressions. 
+                 They are essential for performing mathematical calculations, logical decisions, data manipulation, and other operations in your Java programs.
+   5.Separators (or Punctuation)  -> n Java, separators are symbols that are used to separate different elements in the code.
+
+
+
+12.What are access modifiers we have?
+
+-> In Java, access modifiers are keywords that control the visibility (accessibility) of classes, methods, variables, and constructors.
+   They determine how and where the members of a class can be accessed from other parts of the program.
+   there are 4 types of access modifiers available in java as follows :
+   1. public       2. private       3.protected          4.Default(no keyword)     
+
+
+13.How many access modifiers tokens we have?
+
+-> 1. public
+         Token Type: Keyword
+         Visibility: Makes the class, method, or field accessible from anywhere, both within the same package and from other packages.
+   2. private
+         Token Type: Keyword
+         Visibility: Restricts access to the class, method, or field to only the containing class.
+   3. protected
+         Token Type: Keyword
+         Visibility: Allows access to the class, method, or field within the same package and by subclasses (even in different packages).
+   4. Default (Package-Private)
+         Token Type: No keyword (i.e., if you do not specify any access modifier)
+         Visibility: Makes the class, method, or field accessible only within the same package. This is the default visibility when no modifier is provided.
+
+
+14.Explain class Structure?(state and behavior of PEN class).
+
+-> Class Structure
+        A Java class typically has the following components:
+
+        Class Declaration: The definition of the class itself.
+        State (Fields or Attributes): The variables that represent the properties of the object.
+        Behavior (Methods or Functions): The functions that define the actions that an object can perform.
+        Constructor: A special method used to initialize an object when it is created.
+        Access Modifiers: These define the visibility of the class, methods, and fields.
+
+
+15.Description if main 
+
+-> Syntax of main method 
+
+     public static void main(String[] args) {
+     // statements\code which have to execute  
+      }
+ 
+ public - it is a access modifier.
+ static - The main method is static, which means it belongs to the class rather than an instance of the class. JVM call to main method without creating object.
+ void  - it is a return type which is not return any value.
+ main  - This is the name of the method. The JVM specifically looks for a method named main when the Java application is run.
+ String[] args - This is an array of String objects that can store command-line arguments passed to the program when it is executed. 
+                 This is an array of String objects that can store command-line arguments passed to the program when it is executed. 
+
+
+
+16.What is meant by "WORA" in the context of JAVA?
+
+"WORA" stands for "Write Once, Run Anywhere," which is one of the key principles of the Java programming language.
+ This concept refers to the ability to write a Java program once, and then run it on any device or platform that has a compatible Java Virtual Machine (JVM)
+ installed, without needing to modify the code for different platforms.
+
+The idea behind WORA is made possible by Java's platform-independent bytecode. When you write a Java program, it is compiled into an
+ intermediate bytecode (.class files) instead of being compiled directly to machine code for a specific platform.
+ This bytecode can then be executed by the JVM, which is available on various platforms like Windows, macOS, Linux, etc. The JVM handles the translation
+ of bytecode into machine-specific instructions.
+
+ In simple words, WORA means that with Java, you can write your program once and run it on any computer or device,
+ no matter what operating system it uses (like Windows, macOS, or Linux). This is possible because Java turns your program into a special format (called bytecode),
+ which can run anywhere as long as there is a Java Virtual Machine (JVM) installed on the device. So, you don’t need to rewrite your program for different systems.
+
+
+
+17.Explain how JAVA achieves Platform Independence?
+
+-> Java achieves platform independence through the use of the Java Virtual Machine (JVM) and bytecode. Here's a simple breakdown:
+
+  Write Code in Java: When you write a Java program, you write it in the Java programming language (e.g., using .java files).
+
+  Compile to Bytecode: Instead of compiling the code directly into machine code for a specific platform (like Windows or Mac),
+  the Java compiler translates the code into bytecode. This bytecode is a special, platform-independent format (files with the .class extension).
+
+  Run on JVM: When you want to run the Java program, the bytecode is interpreted by the Java Virtual Machine (JVM). The JVM is available for different 
+  operating systems (Windows, macOS, Linux, etc.). The JVM acts as an intermediary between the bytecode and the underlying hardware.
+
+  JVM Takes Care of the Platform-Specific Details: The JVM is responsible for translating the platform-independent bytecode into platform-specific machine code 
+  that can be executed by the computer's processor. So, whether you're on Windows or Mac, the JVM ensures that your bytecode runs the same way.
+
+In summary:
+
+Java code is compiled into bytecode, which is platform-independent.
+The JVM runs this bytecode on any platform, converting it into platform-specific machine code.
+This approach allows you to write once, and the same Java program can run anywhere that has a JVM, achieving platform independence.
+
+
+18.What role does that JVM play in making java platform independent?
+
+-> The JVM makes Java platform-independent by:
+
+Running bytecode: It reads the same bytecode (compiled Java code) and translates it into machine code for any platform.
+Abstracting platform details: The JVM hides the details of the underlying operating system and hardware, so Java code can run the same way on any platform.
+Providing consistent behavior: As long as the JVM is available on a platform, your Java program will work the same, no matter where it's run.
+So, in essence, the JVM is what makes Java programs "write once, run anywhere" by handling all the platform-specific differences for you.
+
+
+19.How do byte code and the java compiler contribute to platform independence?
+
+-> The Java compiler translates your human-readable code into platform-independent bytecode.
+   Bytecode is a universal intermediate code that can be executed on any platform that has a corresponding JVM.
+   The JVM makes the bytecode run on any platform, taking care of the system-specific details, ensuring that Java programs can run anywhere without modification.
+   In this way, the Java compiler and bytecode are critical in ensuring that Java programs are platform-independent.
+   The compiler generates bytecode, which can be executed on any platform, and the JVM ensures that the bytecode works correctly on that platform.
+
+20.Explain the process of executing a Java program on different platforms.
+
+->  To execute a Java program on a different platform, the Java Virtual Machine 
+    (JVM) translates the Java source code into bytecode, which is then translated 
+    into machine code for the target platform:
+       1. Write the code: Programmers write Java code in a Java Development Kit 
+          (JDK).
+       2. Compile the code: The compiler translates the Java source code into 
+         bytecode, which is platform-independent.
+       3. Run the code: The JVM loads the bytecode, allocates memory, and 
+         converts the bytecode into machine code for the target platform. The 
+         JVM then executes the program and produces output on the console.
+       Java programs can run on different platforms because there are different 
+       versions of the JVM for each platform. As long as the corresponding JVM is 
+       installed on the platform, the Java program can run. This is known as the "Write 
+       Once Run Anywhere" principle
+
+
+
+
+21.What is the difference between platform independence and platform-specific
+   features on JAVA?
+
+->  Platform independence is the ability of a program to run on multiple platforms without modification, while platform-specific features are characteristics of Java 
+     that are specific to a particular platform:
+    Platform independence
+         Java is platform independent because it's compiled into bytecode, which is not 
+         tied to any specific hardware or operating system. This allows Java programs to 
+         be written once and run on any device or operating system that has a Java 
+         Virtual Machine (JVM).
+   Platform-specific features
+         Object Serialization is a platform-specific feature of Java that extends the core 
+         Java Input/Output classes. It supports encoding objects into a stream of bytes, 
+         and reconstructing the object graph from the stream.
+
+
+
+22.What is a literal in JAVA?
+
+-> Literals :
+    Any constant which we are assiging to variable is called Literal.
+    In java we have 5 types of Literals :
+      1) Integral Literal
+      2) Floating Point Literal
+      3) Boolean Literal
+      4) Character Literal
+      5) String Literal
+
+
+23.How are integer literals represented in JAVA?
+
+-> Integral Literal :
+If any numberic literal does not contain decimal or fraction
+then it is called Integral Literal.
+Example : 12, 89, 45 
+In integral literal we have 4 data types :
+a) byte (8 bits)
+b) short (16 bits)
+c) int (32 bits)
+d) long (64 bits)
+An integral literal we can represent in four different forms 
+ 1) Decimal Literal (Base 10)
+ 2) Octal Literal (Base 8)
+ 3) Hexadecimal Literal (Base 16)
+ 4) Binary Literal (Base 2) [Available from JDK 1.7v
+
+
+
+24.Explain the difference between a decimal literal and an Octal literal in
+   Java?
+Decimal Literal :
+ 
+      By default our numeric literals are decimal literal. Here base is 10 so, It accepts 
+      10 digits i.e. from 0-9.
+     Example :  int x = 20; ,int y = 123; , int z = 234;
+Octal Literal :
+      If any Integer literal starts with 0 (Zero) then it will become octal literal. Here 
+      base is 8 so it will accept 8 digits i.e 0 to 7.
+     Example : int a = 018; //Invalid becuase it contains digit 8 which is out of range , int b = 0777; //Valid  , int c = 0123; //Valid
+
+
+
+
+25.What is a Floating-point literal, and how is it written in JAVA?
+
+-> If any numeric literal contains decimal or fraction then it is called floating point 
+   literal.
+   Example : 12.3, 90.7, 56.6
+   In floating point literal we have 2 data types : 
+   a) float (32 bits)
+   b) double (64 bits)
+
+   example:
+public class Test1 
+{
+public static void main(String[] args) 
+{
+float b = 15.29F;
+float c = 15.25f;
+float d = (float) 15.30;
+System.out.println(b + " : "+c+ " : "+d);
+}
+}
+
+
+
+26.What is an instance variable in Java, and how does it differ from a 
+   local variable?
+
+=> INSTANCE VARIABLE:
+      It is a class level variable so It has default value.
+      If a non static variable is defined inside a class but outside of a method then it is called instance variable.
+   LOCAL VARIABLE:
+      If we declare a variable inside a method OR block OR Constructor then it is called local/Automatic/Temporary/Stack variable.
+    Example :
+         public void m1()
+         { int x = 100; //Local Variable }
+    A local variable must be initialized by the developer before use because local variable does not have default values
+
+
+
+27.Explain the concept of a static variable. How is it different from an
+   instance variables
+
+->  In Java, a static variable is a variable that belongs to the class rather than to any specific instance (object) of that class.
+    This means that a static variable is shared among all instances of the class. All objects of the class have access to the same static variable,
+    and any change made to the static variable by one object will be reflected in all other objects.
+   A static variable is declared using the static keyword. It is created when the class is loaded into memory and destroyed when the class is unloaded.
+   Since it is shared by all instances of the class, it has only one copy, irrespective of how many objects are created from that class.
+
+
+
+28.What is a parameter variable in the context of methods in Java?
+   How are parameter variables used?
+
+->  In Java, parameter variables (often referred to simply as parameters) are variables that are declared in a method's signature.
+    These variables are used to pass values (or references) into a method when it is called. They allow a method to operate on data that is provided 
+    by the caller of the method.
+
+    A parameter variable represents an input to the method and acts as a placeholder for the value that will be passed during the method invocation.
+
+   Method Invocation: When the method is invoked (called), the values provided in the method call are known as arguments.
+   These arguments are assigned to the corresponding parameters.
+
+   greet("Alice", 30);  // Passing arguments "Alice" and 30 to the method
+
+   Within the Method: Inside the method body, the parameter variables are used just like local variables. The values that were passed in as arguments can be
+   manipulated, printed, or used in calculations.
+
+   Scope of Parameters: Parameter variables have local scope, meaning they only exist within the method they are declared in. 
+   They are created when the method is called and are destroyed once the method finishes execution.
+
+
+29.Define local variable in Java.How is the scope of a local variable 
+   determined, and what are its limitations?
+
+->  LOCAL VARIABLE: If we declare a variable inside a method OR block OR Constructor then it is called local/Automatic/Temporary/Stack variable.
+    SCOPE OF LOCAL VARIABLE: A local variable has its scope to the function only, in which it is declared. A local variable cannot be used outside the defined function.
+    The scope of global variables is throughout the program and is declared outside the function. They can be used in any function.
+    
+    Limitations : 1.No Default Value   2.Limited Scope   3.Lifetime    4.Cannot be Shared Between Methods:  
+
+
+30.Discuss the scope of instance variables,static variables,parameter variables and local variables
+   How does the scope of each type of variable affect its visibility in different parts of the Java program?  
+
+->   scope of instance variables : The scope of an instance variable is the entire class. Specifically, it is visible to all non-static methods and 
+                                   constructors of the class.
+     visibility : Instance variables can be accessed in any non-static method of the class.They can be accessed using object references
+                  (i.e., object.variable) in static methods or from outside the class if the variable has the appropriate visibility (e.g., public, private).
+
+     scope of static variables : The scope of a static variable is the entire class. It is visible to both static and non-static methods within the class.
+     visibility : Static variables are accessible in static methods and non-static methods of the class.
+                  They can also be accessed by other classes if the static variable is marked with the appropriate access modifier (e.g., public, private).
+  
+    scope of parameter variable : The scope of a parameter variable is limited to the method or constructor in which it is declared.
+                                  It is created when the method is called and is destroyed when the method completes.
+    visibility : Parameter variables are only visible inside the method or constructor in which they are defined. They cannot be accessed outside of that method.
+
+    scope of local variables : The scope of a local variable is limited to the method, constructor, or block in which it is defined.
+                               Once the execution of that method or block ends, the local variable is destroyed.
+    Visibility : Local variables are not accessible outside the method, constructor, or block in which they are declared.
+                 They must be initialized before use, and they can only be accessed after their declaration.
+
+
+31.How can you initialize an instance variable in java with a user-defined
+   value during object creation?
+
+->  Instance variables can be accessed only by creating objects. We initialize instance variables using constructors while creating an object. We can also use 
+    instance blocks to initialize the instance variables.
+
+
+
+
+32.Explain how constructors can be utilized to set user-defined values for
+   instance variables in Java class.
+
+->  In Java, constructors are used to set the initial state of an object by initializing its instance variables, including setting user-defined values:
+    Constructor invocation: When the new keyword is used to create a new object of a class, the constructor is automatically called to initialize the object.
+    Constructor name: The constructor name must match the class name.
+    No return type: Constructors cannot have a return type.
+    Default constructor: If no constructor is written, Java provides a default constructor with no parameters. The instance variables are set to their 
+                         default values, such as 0 for int and double, and null for objects like String.
+    Parameterized constructor: Constructors can be defined with parameters to initialize objects with specific values.
+    Object instance variables: If a constructor has an object instance variable, it can copy the referenced object in the parameter using new and the 
+                              constructor of the referenced object.
+
+
+
+33.What is the role of setter methods,and how do they facilitate the 
+   assignment of user-defined values to instance variables?
+
+->  The Role of Setter Methods , also known as mutator methods, are Java class methods used to modify the values of an object's fields after its 
+    creation. Setter methods are often named with the prefix set followed by the variable name.
+
+
+
+34. What is wrapper class,its type ,either its works internally or externally ?
+
+->  Wrapper class :
+                   A wrapper class in Java is a class that is used to "wrap" or "encapsulate" a primitive data type into an object. This allows primitive types 
+               to be used in situations where objects are required, such as in collections (e.g., ArrayList), generics, or other APIs that require objects. 
+   8 types:
+           Primary Data type       Wrapper Object
+            byte                 : Byte
+            short                : Short
+            int                  : Integer
+            long                 : Long
+            float                : Float
+            double               : Double
+            char                 : Character
+            Boolean              : Boolean
+
+   Wrapper classes work both internally (by holding the primitive value in an object) and externally (by allowing the primitive value to be used in
+   object-oriented contexts). They provide methods for converting and manipulating the primitive values, making them versatile tools in Java programming.
+
+    Example of Wrapper Classes:
+          
+      int x = 10;  // primitive data type
+      Integer obj = Integer.valueOf(x);  // wrapper class for int
+
+
+
+
+35. Why we declare static variables ?
+
+-> Static variables and static methods are two important concepts in 
+   Java. Whenever a variable is declared as static, this means there is 
+   only one copy of it for the entire class, rather than each instance 
+   having its own copy. A static method means it can be called without 
+   creating an instance of the class.
+
+36. Where we declare static variables ?
+
+-> Static variables are declared in a class, and they are used to store 
+information that is related to the entire class rather than a specific 
+instance of the class. 
+
+37. Difference between constructor and method ?
+
+-> What is a Constructor?
+    In the object-oriented programming world, constructors play an 
+    important role. Constructors help in initialising an object. The name of 
+    class and constructor always remain the same. Constructor has the 
+    group of instructions that are performed at the time of object 
+    creation. In general, programmers use constructors to provide initial 
+    values to the variables represented in the class.
+
+   What is the Method?
+    In the object-oriented programming world, a method is a grouping of 
+    instructions that execute some particular operation and return the 
+    result to the caller. It helps the program to become more manageable. 
+    It allows us to reuse the code without writing it again.
+
+
+38. what will happen if we write return type to the constructor ?
+ 
+-> In Java, constructors also do not have a return type. They are used solely to initialize objects. 
+   If you try to add a return type, you will get a compilation error
+
+
+39. What is encapsulation ?
+
+->  Encapsulation is one of the four fundamental Object-Oriented Programming (OOP) concepts, alongside inheritance, polymorphism, and abstraction.
+   In simple terms, encapsulation refers to the bundling of data (variables) and methods (functions) that operate on the data, into a single unit or class.
+
+  The core idea behind encapsulation is to hide the internal details of how an object works and only expose necessary parts of the object to the outside world.
+  This is often achieved by:
+
+  Declaring fields (variables) as private: This ensures that the fields can't be directly accessed from outside the class.
+  Providing public getter and setter methods to access and modify the private fields:
+   This allows controlled access to the fields, enabling validation or other logic before data is accessed or modified.
+
+
+40. which concept we are using to encapsulation ? Data hiding
+
+->  Access Modifiers
+      Access modifiers are used to control the visibility of class members (fields, methods, and constructors).
+      By restricting access to certain parts of a class, encapsulation ensures that sensitive data is protected.
+
+    Private Fields (Data Hiding)
+      To achieve encapsulation, the fields (variables) within a class are often declared as private, meaning that they cannot be directly accessed from 
+      outside the class. This is called data hiding, where the internal state of the object is hidden from other objects.
+
+    Getter and Setter Methods (Access Control)
+      Getters: Public methods that allow other classes to retrieve the value of private fields.
+      Setters: Public methods that allow other classes to modify the value of private fields, often with validation or additional logic.
+
+
+41. what is the difference between new operator and new method ?
+
+-> In  Java, the new operator is used to allocate memory for a new object and initialize it by calling the constructor of the class.
+    Purpose: It is used to create instances (objects) of a class at runtime, i.e., to instantiate a class.
+    Usage: The new operator dynamically allocates memory on the heap and returns a reference to the newly created object.
+
+  The term "new method" is not a standard term in programming, but it is sometimes used informally to refer to factory methods or other ways
+   to create objects or perform initialization in a more controlled manner than just using the new operator.
+   Purpose: A "new method" typically refers to a method that is responsible for creating and initializing objects,
+   especially in cases where additional logic is required or when you want to abstract object creation from direct use of the new operator.
+
+
+42. where object will be created ? heap area.
+
+-> In Java, objects are created on the heap memory, which is part of the memory allocated to a Java application for dynamic memory allocation.
+   The heap is where objects and their instance variables (fields) are stored. However, the stack is used for storing method calls, local variables,
+   and references to objects.
+
+
+43. what is data hiding ? with example. 
+
+-> Data hiding is an important concept in Object-Oriented Programming (OOP). It refers to the practice of restricting direct access to certain details of an object's 
+   internal state (its fields or variables). The main goal is to protect the integrity of the data and ensure that it is only modified or accessed in controlled ways, 
+   typically through public methods known as getters and setters.
+
+
+class BankAccount {
+    // Private field, cannot be accessed directly outside the class
+    private double balance;
+
+    // Constructor to initialize the balance
+    public BankAccount(double initialBalance) {
+        if (initialBalance > 0) {
+            this.balance = initialBalance;
+        } else {
+            this.balance = 0;
+            System.out.println("Invalid initial balance. Setting balance to 0.");
+        }
+    }
+
+    // Getter method to access the balance
+    public double getBalance() {
+        return balance;
+    }
+
+    // Setter method to modify the balance with validation
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+        } else {
+            System.out.println("Deposit amount must be positive");
+        }
+    }
+
+    // Setter method to withdraw money, ensuring balance doesn't go negative
+    public void withdraw(double amount) {
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+        } else {
+            System.out.println("Invalid withdrawal amount or insufficient balance");
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a new bank account object with an initial balance of 1000
+        BankAccount account = new BankAccount(1000);
+
+        // Accessing balance using the getter method
+        System.out.println("Current balance: " + account.getBalance());  // Output: 1000.0
+
+        // Modifying the balance using setter methods
+        account.deposit(500);  // Adding money
+        account.withdraw(200); // Withdrawing money
+
+        System.out.println("Updated balance: " + account.getBalance());  // Output: 1300.0
+
+        // Attempting invalid operations
+        account.deposit(-50);  // Invalid deposit
+        account.withdraw(2000); // Invalid withdrawal (insufficient balance)
+    }
+}
+
+
+
+44. how can we access private variables outside the class ? by using getter and setter method.
+
+-> In Java, private variables are meant to be accessed only within the class where they are declared.
+   However, there are ways to access these private variables outside the class by using specific techniques, such as reflection, getter and setter methods, or nested classes.
+
+45. what are the transfer statements in java ? return; break; continue;
+
+-> 1. break; : The break statement is used to exit from a loop or a switch statement prematurely. It immediately terminates the nearest enclosing loop or 
+               switch statement and transfers control to the code following the loop or switch.
+
+   2. continue; : The continue statement is used to skip the current iteration of a loop and proceed to the next iteration.
+                  It can be used in for, while, and do-while loops.
+
+   3. return; : The return statement is used to exit a method and optionally return a value.
+                If the method has a return type other than void, the return value must match the method's return type.
+
+46. What are the conditional statements are there in java ? 
+
+->  In Java, conditional statements allow you to control the flow of your program based on certain conditions. 
+    These statements evaluate a condition (usually a boolean expression) and execute certain code blocks depending on whether the condition is true or false
+  1. if statement
+  2. if else statement
+  3. If-Else If-Else Statement
+  4. switch statement
+  5. ternary operator
+
+
+47. what are the iterative statements in java ?
+
+-> In Java, iterative statements (also known as looping statements) are used to repeat a block of code multiple times based on a condition or a counter.
+   These statements allow you to perform repetitive tasks efficiently.
+  1. for loop
+  2. while loop
+  3. do-while loop
+  4. enhanced for loop  : It is also known as enhanced for loop, introduced from JDK 1.5
+                          It is used to retrieve the value from the Collection like array.
+                          It will fetch the values one be one from the Collection data so, It is known as for each loop.
+
+
+48. difference between features of java and oops in java ?
+
+-> Features of OOP :
+   1) Encapsulation
+   2) Inheritance
+   3) Polymorphism
+   4) Abstraction
+   5) class
+   6) object
+  Features of java:
+   Object-oriented:
+     Java is an object-oriented programming language. Everything in Java is an object. Object-oriented means we organize our software as a 
+     combination of different types of objects that incorporate both data and behaviour.
+   Platform Independent:
+     Java is platform independent because it is different from other languages like C, C++, etc. which are compiled into platform specific 
+     machines while Java is a write once, run anywhere language
+   Secured:
+     Java is best known for its security. With Java, we can develop virusfree systems.
+   Robust:
+     The English mining of Robust is strong. Java is robust because:
+        It uses strong memory management.
+        There is a lack of pointers that avoids security problems.
+
+
+49. what is constructor and method ?
+
+-> A constructor is a special block of code in a class that is used to initialize objects of that class.
+   It is called when an object of the class is created using the new keyword.
+    1.default constructor : A constructor that has no parameters. If no constructor is explicitly defined,
+                            Java provides a default constructor that initializes the object with default values.
+    2.Parameterized constructor : A constructor that takes parameters to initialize the object with specific values at the time of creation.
+
+  A method is a block of code in a class that performs a specific task. Methods are used to define the behavior of objects.
+  Methods can take inputs, perform some operations, and return a result.
+   1. instance method : These methods operate on instance variables and require an object to be invoked.
+   2. static method : These methods belong to the class rather than to an instance of the class. They can be called without creating an object of the class.
+
+
+50. what is method chaining ? calling from one method to another method is called method chaining
+
+-> Method chaining in Java is a programming technique where multiple methods are called on the same object in a single statement, one after another.
+  It’s possible because each method returns the object itself (typically using the this keyword), allowing subsequent method calls to be chained together.
+
+  Method chaining occurs when multiple methods are called on the same object in a single line of code. Each method returns the object itself (typically using this),
+  enabling the next method to be invoked on that same object.
+
+
+
+51. what is the use of this keyword ? this of keyword?
+
+-> The primary use of this is to refer to the current instance of the class.
+   This allows methods and constructors to refer to the object's instance variables (fields) and invoke other methods in the class.
+   
+   The this keyword in Java is a reference to the current object, i.e., the instance of the class on which a method or constructor is called.
+
+52. what is variable ?
+
+-> In Java, a variable is a container used to store data that can be referenced and manipulated throughout a program.
+   A variable holds a value that can be changed during the execution of a program, hence the name "variable."
+
+
+53. what is inheritance and its types ?
+
+-> Inheritance is one of the core concepts of Object-Oriented Programming (OOP). It allows a new class to inherit properties and behaviors (fields and methods) from an existing class.
+   The class that inherits the properties is called the subclass (or derived class), and the class from which it inherits is called the superclass (or base class).
+
+  1. Single inheritance : In single inheritance, a class can inherit from only one superclass. This is the most basic form of inheritance.
+  2. Multilevel inheritance : In multilevel inheritance, a class is derived from another class, which is already derived from another class.
+     In this case, a chain of inheritance is formed.
+  3. Hirarchical inheritance : In hierarchical inheritance, multiple subclasses inherit from a single superclass. This means one superclass is shared by two or more subclasses.
+  4. Multiple inheritance : In multiple inheritance, a class can inherit from more than one class. This would mean a class has multiple parent classes.
+     However, Java does not support multiple inheritance directly because it can lead to ambiguity (e.g., when two parent classes have a method with
+     the same signature, which one does the child class inherit?).
+
+//Programs.
+
+54. write a java pogram to check given program is armstrong number or not ?   153   (1^3 + 5^3 + 3^3 equals 153.) , 371
+
+55. write a java pogram to check given program is prime number or not ?  a number that can be divided exactly only by itself and 1, for example 7, 17 and 41
+
+56. write a java pogram to check given program is perfect number or not ?
+             A perfect number is a positive integer that is equal to the sum of its positive proper divisors, or divisors excluding the number itself.
+             For example, 6 is a perfect number because 1 + 2 + 3 = 6.      other ex: 28, 496, and 8128.
+
+
+57. write a java pogram to print the fibbonacci series upto the given number ?
+  series : 0 1 1 2 3 5 8 13 21 34
+
+
+
+58. what is IS-A relationship? write one program using IS-A relationship .
+
+   The IS-A relationship is one of the fundamental concepts of inheritance in object-oriented programming (OOP). It represents a relationship between two classes
+   where one class inherits from another class, indicating that an object of the subclass is a type of the superclass.
+
+   In other words, an IS-A relationship means that a subclass is a kind of the superclass, which is a key idea in inheritance.
+   The subclass inherits the properties and behaviors (fields and methods) of the superclass, making it a more specialized version of the superclass.
+
+Example : // Superclass (Parent class)
+class Animal {
+    void eat() {
+        System.out.println("This animal eats food.");
+    }
+}
+
+// Subclass (Child class)
+class Dog extends Animal {
+    void bark() {
+        System.out.println("The dog barks.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.eat();  // Inherited method from Animal class
+        dog.bark();  // Method defined in Dog class
+    }
+}
+
+
+***************************************************************************   END   ************************************************************************************

@@ -1,3 +1,4 @@
+package com.classes;
 
 class Product 
 {

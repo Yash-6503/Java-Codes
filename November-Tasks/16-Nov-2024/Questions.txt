@@ -1,0 +1,125 @@
+Question 1: Library Management System
+-----------------------------------------
+
+Design a system to manage books and memberships in a library.
+
+Requirements:
+Create a Book class with attributes:
+String title, private
+String author, private
+double price, private
+Use parameterized constructor to initialize attributes.
+Create getters and setters for all variables.
+
+Create a LibraryMember class with attributes:
+String name, private
+int memberId, private
+Use parameterized constructor to initialize attributes.
+Create getters and setters.
+
+Create a StudentMember class extending LibraryMember.
+boolean isStudent, private.
+Use super keyword for inheritance.
+
+Create a PremiumMember class extending LibraryMember.
+double membershipFee, private.
+Use super keyword for inheritance.
+
+Condition:
+If any numeric value is <= 0, print "Error: Invalid Input".
+
+Test Case 1:
+
+Input: Invalid price or memberId value.
+Output: Error: Invalid Input
+
+Test Case 2:
+
+Input:
+Book book = new Book("Java Programming", "James Gosling", 500.0);  
+StudentMember student = new StudentMember("Alice", 101, true);  
+PremiumMember premium = new PremiumMember("Bob", 202, 1500.0);  
+
+Output:
+Book: Java Programming by James Gosling, Price: $500.0  
+Student Member: Alice, Member ID: 101, Is Student: true  
+Premium Member: Bob, Member ID: 202, Membership Fee: $1500.0  
+
+========================================================================================
+
+Question 2: Employee Payroll System
+-----------------------------------------------
+
+Develop a payroll system for a company.
+
+Requirements:
+
+Create an Employee class with attributes:
+String name, private
+int employeeId, private
+double basicSalary, private
+Use parameterized constructor and create getters/setters.
+
+Create a FullTimeEmployee class extending Employee.
+double bonus, private.
+
+Create a PartTimeEmployee class extending Employee.
+int hoursWorked, private
+double hourlyRate, private
+
+Condition:
+If employeeId, basicSalary, or other numeric values <= 0, print "Error: Invalid Input".
+
+Test Case 1:
+
+Input: Invalid basicSalary or hourlyRate value.
+Output: Error: Invalid Input
+
+Test Case 2:
+
+Input:
+FullTimeEmployee fullTime = new FullTimeEmployee("John", 101, 50000.0, 10000.0);  
+PartTimeEmployee partTime = new PartTimeEmployee("Jane", 102, 0.0, 20, 50.0);  
+
+Output:
+Error: Invalid Input  
+
+======================================================================================================
+
+Question 3: Vehicle Rental System
+-----------------------------------------------
+
+Create a system to manage vehicles in a rental service.
+
+Requirements:
+
+Create a Vehicle class with attributes:
+String vehicleType, private
+String licensePlate, private
+double rentalPrice, private
+Use parameterized constructor and getters/setters.
+
+Create a Car class extending Vehicle.
+String fuelType, private
+
+Create a Bike class extending Vehicle.
+boolean hasGear, private
+
+Condition:
+If rentalPrice or any numeric value <= 0, print "Error: Invalid Input".
+
+Test Case 1:
+Input: Invalid rentalPrice value.
+Output: Error: Invalid Input
+
+Test Case 2:
+
+Input:
+Car car = new Car("Car", "ABC123", 200.0, "Petrol");  
+Bike bike = new Bike("Bike", "XYZ456", 100.0, true);  
+
+Output:
+Car: Type: Car, License Plate: ABC123, Price: $200.0, Fuel Type: Petrol  
+Bike: Type: Bike, License Plate: XYZ456, Price: $100.0, Has Gear: true  
+
+=============================================================================================

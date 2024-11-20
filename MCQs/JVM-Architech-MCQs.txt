@@ -1,0 +1,95 @@
+JVM Architecture based MCQ questions
+---------------------------------------------------------------------------------------------------
+
+1.	In java which of the following stages for program execution
+A.	Compiler and instruction 
+B.	Only Interpreter            
+C.	Compiler and interpreter        //correct answer
+D.	Only Compiler
+
+
+2.	Which of the following area is stores object of class?
+A.	Stack
+B.	Heap        //correct answer
+C.	File
+D.	Pool
+
+
+3.	what is JDK?
+A.	It is a just runtime environment.
+B.	It is a just development tool.
+C.	It is a set of libraries with a Java runtime environment.
+D.	It is a development tool with a Java runtime environment.       //correct answer
+
+
+4.	Which of the following is responsible to run Java program 
+A.	JIT
+B.	JVM     
+C.	JDK
+D.	JRE     //correct answer
+
+
+5.	Which of the following is used to fix bugs in java programs
+A.	Java Runtime environment
+B.	Java Development kit
+C.	Java Debugger           //correct answer
+D.	Java virtual machine
+
+
+6.	JVM Stands for?
+A.	Java Runtime environment
+B.	Java Development kit
+C.	Java Debugger
+D.	Java virtual machine        //correct answer
+
+
+7.	Which of the following is convert byte code to machine code
+A.	JRE
+B.	JDK
+C.	JVM     //correct answer
+D.	JIT
+
+
+8.	What Byte code ?
+A.	Machine Independent         //correct answer
+B.	Machine dependent
+C.	System Program          
+D.	Machine Compiler
+
+
+9.	Which extension is used for compiled the java file
+A.	.java       
+B.	.js
+C.	.class      //correct answer
+D.	.exe
+
+
+10.	What is the output of the following code
+public class JVMArc {
+	public static void main(String[] args) {
+		System.out.println(JVMArc.class.getClassLoader());
+		System.out.println(JVMArc.class.getClass());
+	}
+}   
+A.	sun.misc.Launcher$AppClassLoader@2a139a55       //correct answer
+	class java.lang.Class
+B.	sun.misc.Launcher$AppClassLoader@2a139a55
+	error
+C.	sun.misc.Launcher$AppClassLoader@2a139a55
+	null
+D.	null
+	class java.lang.Class
+
+
+11.	ClassLoader is which package
+A.	java.util.ClassLoader
+B.	java.io.ClassLoader
+C.	java.lang.ClassLoader           //correct answer
+D.	java.String.ClassLoader
+
+
+12.	Which of the following is not in JVM
+A.	Heap Area
+B.	Stack Area
+C.	Static Area         //correct answer
+D.	Memory Area

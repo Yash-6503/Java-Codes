@@ -27,7 +27,6 @@ public class Customer
 		{
 			currentBalance-=amount;
 			System.out.println("Transaction Successful.");
-			// System.out.println("Available Balance : Rs."+currentBalance);
             currentBalance();
 		}else if(amount <= 0){
             System.out.println("Invalid Input Amount");

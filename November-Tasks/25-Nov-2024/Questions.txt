@@ -1,0 +1,545 @@
+SET A
+-----------------------------------------------------------------------------------------------------------------------
+Program 1 : ( 10 points ) Multilevel Inheritance
+-----------------------------------------------------------------------------------------------------------------------
+University Staff Management System
+You are tasked with creating a system that models university staff members, with multiple levels of staff positions. The system will represent different staff roles and their specific responsibilities.
+
+Class Hierarchy:
+
+Staff Class (Base Class)
+
+Attributes:
+
+String name: Represents the name of the staff member.
+int id: Represents the unique ID of the staff member.
+
+Methods:
+
+Constructor to initialize the name and id attributes.
+
+void displayInfo(): Prints the staff member's name and ID.
+
+Faculty Class (Derived from Staff)
+
+Attributes:
+String department: Represents the department the faculty member belongs to.
+
+Methods:
+Constructor to initialize the name, id, and department.
+
+void teachSubject(): Prints the department the faculty member is teaching.
+
+Professor Class (Derived from Faculty)
+
+Attributes:
+
+String researchArea: Represents the research area of the professor.
+
+Methods:
+
+Constructor to initialize the name, id, department, and researchArea.
+
+void conductResearch(): Prints the research area of the professor.
+
+Task Requirements:
+
+Define the Staff, Faculty, and Professor classes based on the attributes and methods described above.
+Create a Main class that instantiates a Professor object with sample values (e.g., name, ID, department, and research area).
+Call the methods to demonstrate the functionality of each class.
+
+--------------------------------------------------------------------------------------------------------------------------------
+Program 2 : ( 10 points) Hierarchical Inheritance
+------------------------------------------------------------------------------------------------------------------------------------
+
+Problem: Online Shopping System
+
+You are building an Online Shopping System, and you need to create a class hierarchy to represent different types of products that customers can purchase. You will be implementing a set of classes that model the products and their attributes. The focus of this problem is to demonstrate the use of inheritance and method overriding in Java.
+
+Follow the provided code as a base, and create the necessary classes to satisfy the requirements below:
+
+  Create a class named Product:
+
+    It should have protected instance variables name (String) and price (double).
+    Implement a constructor that initializes the name and price.
+    Define a method displayInfo() that prints the product's name and price.
+    Define a method calculateTotalCost(int quantity) that calculates and returns the total cost of purchasing a given quantity of the product.
+
+  Create a subclass named Electronics:
+    Extend the Product class.
+
+    Add a private instance variable brand (String).
+    Implement a constructor that takes name, price, and brand as parameters and initializes the superclass constructor.
+    Define a method displayInfo() method to additionally print the product's brand.
+
+  Create another subclass named Clothing:
+    Extend the Product class.
+
+    Add a private instance variable size (String).
+    Implement a constructor that takes name, price, and size as parameters and initializes the superclass constructor.
+    Define a method displayInfo() method to additionally print the product's size.
+
+  Create a class named OnlineShopping (as provided in the code):
+
+    In the main method, create instances of both Electronics and Clothing with appropriate values.
+    Print information about each product, including their specific attributes.
+    Calculate and print the total cost for a given quantity of each product.
+
+Your task is to implement the required classes based on the provided problem description. This will help you practice inheritance concepts.
+
+
+--------------------------------------------------------------------------------------------
+Program 3 : (Points 10) Single level Inheritance 
+----------------------------------------------------------------------------------------------
+Consider a scenario where you are designing a class hierarchy to handle basic and advanced calculations. The base class, CalculationBase, has two variables, num1 and num2, and a method performCalculation() that adds these two numbers. The subclass, AdvancedCalculation, extends the base class, introduces two additional variables, additionalNum and operation, and has a method performAdvancedCalculation() that performs a more complex operation using all four numbers.
+
+Your task is to implement and test this class hierarchy. Follow the instructions below:
+
+CalculationBase class:
+
+Include two variables, int num1 and int num2.
+Implement a default constructor and a parameterized constructor to initialize these variables.
+Create a method called performCalculation() that adds num1 and num2 and displays the result.
+
+AdvancedCalculation class:
+
+Extend the CalculationBase class.
+
+Introduce two additional variables, double additionalNum and String operation.
+
+Implement a default constructor and a parameterized constructor to initialize all four variables.
+
+Create a method called performAdvancedCalculation() that uses all four numbers to perform a complex operation. Display the result along with the details of the operation.
+
+In the Main class:
+
+Create an instance of the AdvancedCalculation class, setting values for all variables.
+Demonstrate the use of the performCalculation() method inherited from the superclass.
+Demonstrate the use of the performAdvancedCalculation() method from the subclass.
+
+----------------------------------------------------------------------------------------------------
+Program 4 : (points 10) Hierarchical Inheritance
+-----------------------------------------------------------------------------------------------------
+You are tasked with modeling a simple banking system using Java classes. Implement three classes: BankAccount, SavingsAccount, and CheckingAccount.
+
+BankAccount Class:
+
+Attributes:
+
+int accountNumber: Represents the account number.
+double balance: Represents the current balance in the account.
+
+create Parametrized constructor to initialize Instance Variables
+
+Methods:-
+
+1)method name:- deposite
+Return Type:- void
+parameter: double amount
+this method Adds the specified amount to the balance.
+
+2)method name:- withdraw
+Return Type:- void
+parameter: double amount
+
+Subtracts the specified amount from the balance if sufficient funds are available; otherwise, prints "Insufficient funds."
+
+SavingAccount class:-
+
+extends from BankAccount.
+
+Additional Attributes:
+double interestRate: Represents the interest rate for the savings account.
+
+create Parametrized constructor to initialize Instance Variables
+
+
+Methods:-
+
+1)method name:- addInterest
+Return Type:- void
+parameter: NO
+this method Adds interest to the balance based on the interest rate.
+
+CheckingAccount Class:
+
+extends from BankAccount.
+
+Additional Attributes:
+
+double overdraftLimit: Represents the overdraft limit for the checking account.//3000
+
+create Parametrized constructor to initialize Instance Variables
+
+Methods:-
+
+void withdraw(double amount): Subtracts the specified amount from the balance if it does not exceed the overdraft limit(3000); otherwise, prints "Exceeds overdraft limit."
+
+
+create main class to test your logic
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+							SET B
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------
+Program 1 : (10 points) Hierarchical Inheritance
+--------------------------------------------------------------------------------------------
+
+Base Class: Book
+The Book class represents the common properties and behavior of all books.
+
+Attributes:
+
+String title: Represents the title of the book.
+String author: Represents the author of the book.
+double price: Represents the price of the book.
+Constructor:
+
+A parameterized constructor to initialize the title, author, and price attributes.
+Methods:
+
+void getDetails(): Prints the details of the book, including title, author, and price.
+void applyDiscount(double percentage): Applies a discount on the book's price based on the given percentage.
+
+Subclass: EBook
+The EBook class extends the Book class and represents electronic books.
+
+Additional Attributes:
+
+double fileSize: Represents the size of the eBook file in megabytes (MB).
+String format: Represents the file format of the eBook (e.g., PDF, EPUB).
+Constructor:
+
+A parameterized constructor to initialize the attributes of both the parent class (Book) and the subclass (EBook).
+ Methods:
+
+void getDetails(): Displays all the details of the book, including the fileSize and format.
+Subclass: AudioBook
+
+The AudioBook class extends the Book class and represents audiobooks.
+
+Additional Attributes:
+
+double duration: Represents the duration of the audiobook in hours.
+String narrator: Represents the name of the audiobook's narrator.
+Constructor:
+
+A parameterized constructor to initialize the attributes of both the parent class (Book) and the subclass (AudioBook).
+ Methods:
+
+void getDetails(): Displays all the details of the book, including the duration and narrator.
+Requirements:
+Define the class hierarchy as described above.
+Create a main class to demonstrate the functionality of the system:
+Create at least one instance of Book, EBook, and AudioBook.
+Call the getDetails() method on each instance to display their details.
+Apply a discount on one of the books using the applyDiscount() method and verify that the price is updated correctly.
+
+
+
+------------------------------------------------------------------------------------------
+Program 2 : (10 points) Multilevel Inheritances 
+---------------------------------------------------------------------------------------------
+
+Company Management System
+You are tasked with creating a Company Management System that models employees within a company. The system should represent employees at different levels, where each level has specific responsibilities and properties. Use multi-level inheritance to model the relationships between the classes.
+
+Class Hierarchy:
+Employee Class (Base Class):
+
+Attributes:
+String name: Represents the name of the employee.
+int id: Represents the unique ID of the employee.
+Methods:
+A constructor to initialize the name and id attributes.
+void displayInfo(): Prints the employee's name and ID.
+
+Manager Class (Derived from Employee):
+
+Attributes:
+String department: Represents the department managed by the manager.
+Methods:
+A constructor to initialize the name, id, and department attributes.
+void manageTeam(): Prints the manager's name and the department they manage.
+
+SeniorManager Class (Derived from Manager):
+
+Attributes:
+int numTeams: Represents the number of teams the senior manager oversees.
+Methods:
+A constructor to initialize the name, id, department, and numTeams attributes.
+void handleMultipleTeams(): Prints the number of teams managed by the senior manager.
+Task Requirements:
+Define the Classes:
+
+Implement the Employee, Manager, and SeniorManager classes based on the attributes and methods described above.
+Class Functionality:
+
+The Employee class should store the basic information about an employee, such as their name and ID.
+The Manager class should extend Employee and add the ability to manage a department.
+The SeniorManager class should extend Manager and further add the ability to oversee multiple teams.
+Create a Main Class:
+
+In the Main Class, instantiate a SeniorManager object with sample values (e.g., name, ID, department, and number of teams).
+Call the displayInfo(), manageTeam(), and handleMultipleTeams() methods to demonstrate the functionality of each class.
+
+
+-----------------------------------------------------------------------------------------------------------
+Program 3 :  (Points 10) Sigle level Inheritance
+------------------------------------------------------------------------------------------------------------
+
+You are required to develop a system to manage details about teachers and the classes they handle. The system must include the following functionality:
+
+Base Class: Teacher
+
+ private fields:
+
+name (String): Name of the teacher.
+id (int): Unique identifier for the teacher.
+specialization (String): The area of expertise of the teacher.
+
+Includes:
+
+A default constructor to initialize the fields with default values:
+name = "Unknown", id = 0, specialization = "General".
+
+A parameterized constructor to initialize these fields with specific values.
+
+A method displayDetails() to print the teacher's details.
+
+Derived Class: ClassDetails
+Inherits the Teacher class and includes:
+
+Additional private fields:
+className (String): The name of the class handled by the teacher.
+numberOfStudents (int): The number of students in the class.
+
+A default constructor to initialize:
+
+className = "Not Assigned", numberOfStudents = 0.
+
+A parameterized constructor to initialize the teacher's details along with the class-specific details.
+
+A method displayClassDetails() to display the teacher's information and class details.
+
+Main Class
+
+Create an object of the ClassDetails class to represent a teacher named "Jane Smith" with:
+id = 301
+Specialization = "Physics"
+Class Name = "10th Grade"
+Number of Students = 40
+
+Call the displayClassDetails() method to print all the details.
+
+------------------------------------------------------------------------------------------------------------------------------
+Program 4 : (10 points) Hierarchical Inheritance
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Problem: Online Shopping System
+
+You are building an Online Shopping System, and you need to create a class hierarchy to represent different types of products that customers can purchase. You will be implementing a set of classes that model the products and their attributes. The focus of this problem is to demonstrate the use of inheritance and method overriding in Java.
+
+Follow the provided code as a base, and create the necessary classes to satisfy the requirements below:
+
+  Create a class named Product:
+
+    It should have protected instance variables name (String) and price (double).
+    Implement a constructor that initializes the name and price.
+    Define a method displayInfo() that prints the product's name and price.
+    Define a method calculateTotalCost(int quantity) that calculates and returns the total cost of purchasing a given quantity of the product.
+
+  Create a subclass named Electronics:
+    Extend the Product class.
+
+    Add a private instance variable brand (String).
+    Implement a constructor that takes name, price, and brand as parameters and initializes the superclass constructor.
+    Define a method displayInfo() method to additionally print the product's brand.
+
+  Create another subclass named Clothing:
+    Extend the Product class.
+
+    Add a private instance variable size (String).
+    Implement a constructor that takes name, price, and size as parameters and initializes the superclass constructor.
+    Define a method displayInfo() method to additionally print the product's size.
+
+  Create a class named OnlineShopping (as provided in the code):
+
+    In the main method, create instances of both Electronics and Clothing with appropriate values.
+    Print information about each product, including their specific attributes.
+    Calculate and print the total cost for a given quantity of each product.
+
+Your task is to implement the required classes based on the provided problem description. This will help you practice inheritance concepts.
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+							SET C
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------
+Program 1 : (10 Points) Hierarchical Inheritance
+--------------------------------------------------------------------------------------------
+Employee Class:
+
+Include private variables: String name, int id, and double salary.
+Implement a default constructor and a parameterized constructor to initialize these variables.
+Create a method called calculateSalary() that returns the salary of a generic employee.
+
+Developer Class:
+
+Extend the Employee class.
+Introduce an additional private variable, double hra (House Rent Allowance).
+Implement a default constructor and a parameterized constructor to initialize the base class variables and the hra variable.
+Create a method called calculateSalary() in this class to include the HRA in the salary calculation for developers.
+
+
+
+Manager Class:
+
+Extend the Employee class.
+Introduce two additional private variables, double ta (Travel Allowance) and double foodAllowance.
+Implement a default constructor and a parameterized constructor to initialize the base class variables and the additional variables.
+Create a method called calculateSalary() int this class to include TA and food allowance in the salary calculation for managers.
+
+
+
+In the Main class:
+
+Create instances of the Developer and Manager classes, setting values for name, ID, salary, and relevant allowances.
+Display the calculated salary for each employee using the calculateSalary() method.
+
+------------------------------------------------------------------------------------------
+Program 2 : ( 10 point) Single level Inheritance
+---------------------------------------------------------------------------------------------
+
+You are tasked with designing a system to manage teacher information and the subjects they teach. The system should include the following features:
+
+Teacher Class:
+
+Contains private fields for:
+
+name (String): The name of the teacher.
+id (int): The unique ID of the teacher.
+specialization (String): The teacher's area of specialization.// Mathematics,Science, physics
+
+A default constructor that initializes the fields to default values:
+Name: "Unknown".
+ID: 0.
+Specialization: "General".
+
+A parameterized constructor that initializes these fields with specific values.
+A method displayDetails() to print the teacher's details.
+Subject Class:
+
+Inherits from the Teacher class.
+Adds an additional private field:
+
+subjectName (String): The name of the subject the teacher teaches.
+
+A default constructor that initializes subjectName to "Not Assigned".
+
+A parameterized constructor that accepts the teacher's details (name, ID, specialization) and the subject name, and initializes all fields accordingly.
+
+A method displaySubject() that:
+Displays the teacher's details by calling the displayDetails() method of the base class.
+Displays the subjectName.
+
+Main Class:
+
+In the main() method:
+Create an instance of the Subject class for a teacher named "John Doe" who teaches "Algebra" with ID 201 and specialization in "Mathematics".
+Call the displaySubject() method to display the teacher's details and the subject name.
+
+
+-----------------------------------------------------------------------------------------------------------
+Program 3 : (10 points) Multi-level Inheritance
+------------------------------------------------------------------------------------------------------------
+
+
+Vehicle Management System
+You are tasked with designing a vehicle management system to track different types of vehicles within a fleet. Each type of vehicle has specific attributes and responsibilities.
+
+Class Hierarchy:
+
+Vehicle Class (Base Class)
+
+Attributes:
+
+String brand: Represents the brand of the vehicle.
+String model: Represents the model of the vehicle.
+int year: Represents the year of manufacture.
+
+Methods:
+Constructor to initialize brand, model, and year.
+void displayInfo(): Prints the vehicle's details (brand, model, and year).
+Car Class (Derived from Vehicle)
+
+Attributes:
+int numDoors: Represents the number of doors in the car.
+
+Methods:
+Constructor to initialize brand, model, year, and numDoors.
+
+void carDetails(): Prints the number of doors and the vehicle details.
+
+ElectricCar Class (Derived from Car)
+
+Attributes:
+int batteryCapacity: Represents the battery capacity of the electric car (in kWh).
+
+Methods:
+Constructor to initialize brand, model, year, numDoors, and batteryCapacity.
+void electricCarDetails(): Prints the battery capacity and car details.
+
+Task Requirements:
+
+Define the Vehicle, Car, and ElectricCar classes based on the attributes and methods described above.
+Create a Main class that instantiates an ElectricCar object with sample values (e.g., brand, model, year, number of doors, and battery capacity).
+Call the methods to demonstrate the functionality of each class.
+
+------------------------------------------------------------------------------------------------------------------------------
+Program 4 : (10 Points) Hierarchical Inheritance
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Problem: Zoo Management System
+
+You are tasked with creating a Zoo Management System that can handle different types of animals. You need to implement classes that represent animals and their specific characteristics. In this system, you'll implement the concept of inheritance and method overriding to showcase the behavior of animals.
+
+Follow the provided code as a base, and create the necessary classes to satisfy the requirements below:
+
+  Create a class named Animal:
+
+    It should have private instance variables name (String) and age (int).
+    Implement a constructor that initializes the name and age.
+    Define a method makeSound() that prints "The animal makes a generic sound."
+    Define a method displayInfo() that prints the name and age.
+
+  Create a subclass named Lion:
+    Extend the Animal class.
+
+    Add a private instance variable maneLength (int).
+    Implement a constructor that takes name, age, and maneLength as parameters and initializes the superclass constructor.
+    Define a method makeSound() method to print "The lion roars loudly."
+    Define a method displayManeLength() that prints the maneLength.
+
+  Create another subclass named Elephant:
+    Extend the Animal class.
+
+    Add a private instance variable tuskLength (float).
+    Implement a constructor that takes name, age, and tuskLength as parameters and initializes the superclass constructor.
+    Define a method the makeSound() method to print "The elephant trumpets."
+    Define a method displayTuskLength() that prints the tuskLength.
+
+  Create a class named ZooManagement (as provided in the code):
+    In the main method, create instances of both Lion and Elephant with appropriate values.
+    Print information about the lion and the elephant, including their specific attributes and the sounds they make.
+
+Your task is to implement the required classes based on the provided problem description. 

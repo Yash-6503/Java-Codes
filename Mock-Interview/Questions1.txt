@@ -137,3 +137,25 @@ Types of type Casting:
 59. What is IS-A relationship?
 
 60. Write one program based on IS-A relationship?
+
+61. How does the Class Loader works in JVM?
+
+62. Explain about the memory areas in JVM?
+
+63. Explain the concept of JVM Stack and its importance?
+
+64. How does JIT compilation works in a JVM?
+
+65. Explain the process of class loading in the JVM?
+
+66. What happens in the JVM when an object is created?
+
+67. Explain IS-A relationship between objects?
+
+66. Explain HAS-A relationship between objects?
+
+67. What is a IS-A relationship?
+
+68. What is a HAS-A relationship?
+
+69. Difference between IS-A relationship and HAS-A relationship?

@@ -1,0 +1,123 @@
+1) Find the output
+ class Demo {
+	int x;
+	int y;
+	public Demo() {
+		x = 10;
+		y = x++;
+		x = this.y + this.x;    //22
+		this.y = x + this.y;    //33
+	}
+	public Demo(int x, int y) {
+		this.x = this.x + x;    //42
+		this.y = this.x + y;    //87
+	}
+}
+public class Test {
+	public static void main(String[] args) {
+		System.out.print(new Demo().x + new Demo().y);      //55
+		Demo demo = new Demo(20, 45);
+		System.out.print(" " + demo.x + " " + demo.y + " " + (new Demo().x - demo.y));  // 20 45 45
+	}
+}
+
+output
+52
+20 65 -44
+
+--------------------------------------------------------------------
+
+2) Find the output
+
+class Demo {
+	int x;
+	int y;
+	public Demo() {
+		x = 10;
+		y = x++;
+	}
+	public Demo(int x, int y) {
+		this.x += this.x + x++;
+		this.y -= this.x + --y;
+	}
+}
+public class Test {
+	public static void main(String[] args) {
+		System.out.print(new Demo().x + new Demo().y);
+		Demo demo = new Demo(30, 50);
+		System.out.print(" " + demo.x + " " + demo.y + " " + (new Demo().x - demo.y));
+	}
+}
+
+output
+21 30 -79 90
+--------------------------------------------------------------------
+
+3) Find the output
+
+  class Example {
+	int x = 10;
+	int y = 20;
+	public Example()
+	{
+		x = 90;     //25 //110
+		y = y+80;   //100
+	}
+}
+public class Test {
+	public static void main(String[] args) {
+		Example e1 = new Example();
+		Example e2 = new Example();
+		e2.x = 25;
+		e1.x = e2.y + 10;
+		System.out.println(e1.x + " " + e1.y);  //110 100
+		System.out.println(e2.x + " " + e2.y);  //25 100
+	}
+}
+
+output
+110 100
+25 100
+--------------------------------------------------------------------
+
+4) Find the output
+
+public class Exam {
+	int eid;
+	String ename;
+	String company;
+	public String toString() {
+		return "eid:" + eid + "\n" + "ename:" + ename + "\n" + "company:" + company + "\n";
+	}
+	public static void main(String[] args) {
+		Exam e1 = new Exam();
+		e1.eid = 7279;
+		e1.ename = "Ganesh";
+		e1.company = "Naresh IT";
+		e1 = new Exam();
+		System.out.println(e1.toString());
+	}
+}
+
+output
+eid:0
+ename:null
+company:null
+--------------------------------------------------------------------
+
+Q5) Answer 
+
+What is the default value of an instance variable in Java?
+ 
+a) 0 (zero)
+
+b) Null
+
+c) Depends on the data type
+
+d) Undefined
+
+Answer
+c) Depends on the data type
+
+--------------------------------------------------------------------

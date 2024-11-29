@@ -7,6 +7,7 @@ public class ShapeCalculator
     public int calculateArea(int sideLength){
         if(sideLength <= 0){
             System.out.println("Side Length must be non-negative");
+            System.exit(0);
             return 0;
         }else{
             return sideLength * sideLength;
@@ -18,12 +19,15 @@ public class ShapeCalculator
             return length * width;
         }else if(length > 0 && width <= 0){
             System.out.println("Width must be non-negative.");
+            System.exit(0);
             return 0;
         }else if(width > 0 && length <= 0){
             System.out.println("Length must be non-negative.");
+            System.exit(0);
             return 0;
         }else{
             System.out.println("Length and width must be non-negative.");
+            System.exit(0);
             return 0;
         }
     }
@@ -33,6 +37,7 @@ public class ShapeCalculator
             return 3.14 * (radius * radius);
         }else{
             System.out.println("Radius must be non-negative.");
+            System.exit(0);
             return 0;
         }
     }

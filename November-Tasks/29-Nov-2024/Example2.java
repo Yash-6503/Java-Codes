@@ -8,11 +8,11 @@ public class Example2
     {
         ShapeCalculator sc = new ShapeCalculator();
 
-        System.out.println(sc.calculateArea(-4) == 0 ? "" : "Area of Square = "+sc.calculateArea(4));
+        System.out.println("Area of Square = "+sc.calculateArea(4));
 
-        System.out.println(sc.calculateArea(-10,-10) == 0 ? "" : "Area of Rectangle = "+sc.calculateArea(10,10));
+        System.out.println("Area of Rectangle = "+sc.calculateArea(10,10));
         
-        System.out.println(sc.calculateArea(-7.0) == 0 ? "" : "Area of Circle = "+sc.calculateArea(7.0));
+        System.out.println("Area of Circle = "+sc.calculateArea(7.0));
     }
 }
 

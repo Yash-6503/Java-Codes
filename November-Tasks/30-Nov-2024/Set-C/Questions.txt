@@ -1,0 +1,175 @@
+_________________________________Set C___________________________________
+
+1) ( Point 10 ) Is-A-Relationship
+
+Problem: Employee Management System
+
+You are tasked with creating an Employee Management System for an organization that has different roles 
+such as Manager, Developer, and Intern.
+
+1. Employee Class
+
+The Employee class represents a generic employee in the organization.
+
+Attributes:
+
+String name: The name of the employee.
+int employeeId: The unique ID of the employee.
+
+Methods:
+
+Parametrized Constructor:
+
+Purpose: Initialize the name and employeeId 
+attributes.
+
+Method: displayDetails()
+Access Modifier: public
+Return Type: void
+Behavior: Displays the name and employee ID in the format:
+"Name: name, Employee ID: employeeId"
+
+2. Manager Class base class
+
+The Manager class is a specialized type of employee.
+
+Methods:
+
+Parametrized Constructor:
+
+Purpose: Initialize the name and employeeId attributes using the parent class 
+constructor.
+
+Method: assignTask()
+Access Modifier: public
+Return Type: void
+Behavior: Displays the message:
+"name is assigning tasks."
+
+3. Developer Class
+
+The Developer class is a specialized type of employee.
+
+Methods:
+Parametrized Constructor:
+
+Purpose: Initialize the name and employeeId attributes using the parent class constructor.
+
+Method: writeCode()
+Access Modifier: public
+Return Type: void
+Behavior: Displays the message:
+"name is writing code."
+
+4. Intern Class
+
+The Intern class is a specialized type of employee.
+
+Methods:
+
+Parametrized Constructor:
+
+Purpose: Initialize the name and employeeId attributes using the parent class constructor.
+
+Method: learn()
+Access Modifier: public
+Return Type: void
+Behavior: Displays the message:
+"name is learning."
+
+5. Main Class
+Write a main method to:
+
+Create objects for:
+
+A Manager named "Alice" with employee ID 101.
+A Developer named "Bob" with employee ID 102.
+An Intern named "Charlie" with employee ID 103.
+Call the displayDetails() method for each object.
+
+Call the specific behavior methods (assignTask(), writeCode(), learn()) for each role.
+
+
+=======================================================================
+
+2) ( Point 10 ) Has-A-Relationship
+
+Movie and Director Management System
+Create a Movie and Director Management System where you need to manage details about movies and their
+respective directors. Each movie is associated with one director, and each director has a name and a birth year.
+
+Classes and Methods:
+Director Class:
+
+Attributes:
+name (String): The name of the director.
+birthYear (int): The birth year of the director.
+Constructor:
+A parameterized constructor to initialize name and birthYear for the director.
+Methods:
+displayDetails(): Prints the director's name and birth year.
+Movie Class:
+
+Attributes:
+title (String): The title of the movie.
+genre (String): The genre of the movie (e.g., Action, Sci-Fi).
+releaseYear (int): The year the movie was released.
+director (Director): The director of the movie.
+Constructor:
+A parameterized constructor to initialize title, genre, releaseYear, and director for the movie.
+Methods:
+displayDetails(): Prints the movie's title, genre, release year, and the director's details 
+(using the displayDetails() method of the Director class).
+Main Class:
+
+In the main() method:
+Create instances of Director.
+Create instances of Movie with assigned directors.
+Display the details of each movie along with its director using the displayDetails() method.
+
+
+
+======================================================================
+
+
+3) ( Point 10 ) Has-A-Relationship
+
+
+SIMCard Class:
+
+Attributes:
+simname (String)://VI,JIO
+String simNumber;
+
+Methods:
+Constructor: Initializes the attributes.
+
+Getter and Setter Methods:
+
+
+Mobile Class:
+
+Attributes:
+ private String brand;//samsung
+    private String model;//A14
+    private int releaseYear;//2024
+    private SIMCard simCard;//
+
+Methods:
+Constructor: Initializes the mobile class properties.
+
+Copy Constructor: Creates a deep copy of the mobile.
+
+Getter and Setter Methods:
+
+
+Method changeSim(SIMCard simCard):
+Parameters: simCard (SIMCard)
+Returns: void
+Behaviour: Changes the simCard of the Mobile to the new simCard.
+Method displayDetails():
+Returns: Displays the simCard details along with the Mobile information.
+
+Main Class: The Main class will create instances of simCard and Mobile, make a deep copy of the Mobile,
+and test the changeSim() method.
+

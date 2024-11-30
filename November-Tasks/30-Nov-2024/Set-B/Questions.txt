@@ -1,0 +1,181 @@
+____________________________________Set B_______________________________
+
+
+1) ( Point 10 ) Is-A-Relationship
+
+Problem: Create an E-Commerce System
+
+Design a system to manage Products and their specialized types like Electronics and Clothing in 
+an e-commerce platform.
+
+1. Product Class
+
+Attributes:
+
+String name: The name of the product.
+double price: The price of the product.
+
+Methods:
+
+Parametrized Constructor:
+
+Purpose: Initialize name and price.
+
+Method: displayDetails()
+
+Access Modifier: public
+Return Type: void
+Behavior: Displays the product name and price in the format:
+"Product Name: name, Price: $price"
+
+2. Base Class: Electronics
+
+Attributes:
+
+String brand: The brand of the electronic item.
+
+Methods:
+
+Parametrized Constructor:
+
+Purpose: Initialize name, price, and brand.
+
+Method: showBrand()
+
+Access Modifier: public
+Return Type: void
+Behavior: Displays the message:
+"This electronic product is by brand." brand name 
+
+3. Base Class: Clothing
+
+Attributes:
+
+String size: The size of the clothing item.
+Methods:
+
+Parametrized Constructor:
+
+Purpose: Initialize name, price, and size.
+
+Method: showSize()
+
+Access Modifier: public
+Return Type: void
+Behavior: Displays the message:
+"The size of this clothing item is size."
+
+
+4. Main Class
+Create instances of Electronics and Clothing.
+Call all their methods to display details and their respective behaviors
+
+Expected Output: -
+
+Product Name: Smartphone, Price: $699.99
+This electronic product is by Samsung.
+Product Name: T-Shirt, Price: $29.99
+The size of this clothing item is Medium.
+
+
+=======================================================================
+
+
+2) ( Point 10 ) Has-A-Relationship
+
+Create a Library Management System where a Library "has a" Book. The Library can contain details 
+about a specific Book including the book's title and author.
+
+
+Book Class:
+
+Attributes:
+title (String): The title of the book.
+author (String): The author of the book.
+
+Constructor:
+A parameterized constructor to initialize the book's title and author.
+
+Method:
+displayDetails(): Displays the book's title and author.
+
+create Library Class:
+
+Attributes:
+name (String): The name of the library.
+book (Book): An instance of the Book class, representing a single book that the library holds.
+
+Constructor:
+
+A parameterized constructor to initialize the library's name and the Book object.
+
+Method:
+
+displayLibraryDetails(): Displays the name of the library and calls the displayDetails() method 
+of the Book object to show the book's title and author.
+
+Main Class:
+
+In the main() method, create a Book object and a Library object that contains the book.
+Call the displayLibraryDetails() method to display both the library and book details.
+
+Example:
+Input:
+Book title: "The Catcher in the Rye"
+Book author: "J.D. Salinger"
+Library name: "Central Library"
+
+Expected Output:
+
+Library Name: Central Library
+Book Title: The Catcher in the Rye, Author: J.D. Salinger
+
+
+======================================================================
+
+3) ( Point 10 ) Has-A-Relationship
+
+Owner Class:
+
+Attributes:
+
+name (String): The name of the owner.
+age (int): The age of the owner.
+
+Methods:
+ 
+Constructor to initialize the owner.
+
+
+Create getter and setters method 
+
+
+Product Class:
+
+Attributes:
+
+brand (String): The brand of the product.
+model (String): The model of the product.
+releaseYear (int): The release year of the product.
+owner (Owner): The owner of the product.
+
+Methods:
+
+1) Constructor to initialize the product.
+
+2) Copy constructor to create a deep copy of the product.
+
+3)create getters and setters method for Product class
+
+4)
+method Name :-changeOwner(Owner newOwner):
+return type :- void
+Parameters :- Owner newOwner
+Behaviour :- Changes the owner of the product.
+
+5)
+displayDetails(): Displays the details of the product including the owner's information.
+
+create main class to test your login 
+
+create obejct and deep copy and call the methods to change the owner and test your logic

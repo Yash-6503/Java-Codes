@@ -1,0 +1,226 @@
+____________________________________________Set A_______________________________________
+
+1) ( Point 10 ) Is-A-Relationship
+
+create Person class 
+
+Attributes:-
+
+String name;
+int age;
+
+methods:- 
+
+1)
+create Parametrized constructor to initialize and instance variables
+
+2) 
+method name:-displayDetails
+Return type:-void
+access Modifier:- public 
+method  behaviour :- this method will display the name of the person and age of the person
+
+
+create base class name as Student
+
+Attributes:-
+int rollNumber;
+
+methods:-
+
+1) create Parametrized constructor to initialize and instance variables 
+
+2)
+method name:-study
+Return type:-void
+access Modifier:- public 
+method  behaviour :- this method will display the messages 'name + " is studying.'
+
+create base class name as Teacher
+
+Attributes:-
+String Subject;
+
+methods:-
+
+1) create Parametrized constructor to initialize and instance variables 
+
+2)
+method name:-teach
+Return type:-void
+access Modifier:- public 
+method  behaviour :- this method will display the messages 'name + " is teaching "+subject name
+
+create main class and test your logic 
+create object for student and teacher and call the methods
+
+
+========================================================================================================
+
+
+
+2) ( Point 10 ) Has-A-Relationship
+
+create class name as Engine
+
+Attribute :- 
+String type;
+
+method:-
+
+create Parametrized constructor to initialize 
+the instance varibales
+
+
+method Name :- startEngine
+return type :- void
+method behaviour :- this method will print the message [ Engine of type " + type + " is starting..." ]
+
+
+create another class name as Car
+
+Attributes:-
+
+String brand;
+String model;
+Engine engine;
+
+method:-
+
+create Parametrized constructor to initialize 
+the instance varibales
+
+1)
+
+method Name :- displayDetails
+return type :- void
+behavior  :- this method will print the message  "Car Brand: " + brand + ", Model: " + model "
+
+2)
+
+method Name :- startCar
+return type :- void
+behavior  :- this method will print the message  "Starting the car..."
+and call the method startEngine() which is present in Engine class 
+
+create main class to test your login 
+
+Creates an Engine object and associates it with a Car object.
+Demonstrates composition by calling methods of the Engine class through the Car object.
+
+Expected Output :- 
+
+Car Brand: Ford, Model: Mustang
+Starting the car...
+Engine of type V8 is starting...
+
+
+=================================================================================================
+3) ( Point 10 ) Has-A-Relationship
+
+
+Create a Smartphone object with attributes such as brand, model, releaseYear, and a User object as the phone's current user.
+Support creating a deep copy of a Smartphone object to ensure that any modifications to the original 
+object's user or attributes do not affect the copied version.
+Include a method to update the user of the original Smartphone object.
+Print the details of both the original and copied Smartphone objects to verify the deep copy functionality.
+
+
+Create a User class with the following attributes:
+
+private String name
+private int age
+
+Implement the following in the User class:
+
+A parameterized constructor to initialize all attributes.
+
+Getter and setter methods for all attributes.
+
+
+Create a Smartphone class with the following 
+
+attributes:
+
+private String brand
+private String model
+private int releaseYear
+private User user
+
+Implement the following in the Smartphone class:
+
+methods :-
+
+1)A parameterized constructor to initialize all attributes.
+
+2)A copy constructor that takes a Smartphone 
+object and initializes the new Smartphone object with the same attributes.
+
+3)Getter and setter methods for all attributes.
+
+4)method Name  :- changeUser(User newUser)
+return type :- void
+parameters :-User newUser
+behavior:- this method will work updates the Smartphone object's user.
+
+Implement a Main class where:
+
+A Smartphone object is created and initialized with attributes, including a user.
+A deep copy of the Smartphone object is created using the copy constructor.
+The attributes of both the original and copied Smartphone objects are printed to verify the 
+copy constructor functionality.
+The changeUser() method is called to update the original Smartphone object's user.
+The attributes of both the original and copied Smartphone objects are printed again to confirm that 
+the copied object's user remains unchanged.
+Conditions:
+If any numeric value (e.g., releaseYear or age) is zero or negative, print Error: Invalid Input.
+
+
+Test Cases:
+Test Case 1:
+Sample Input:
+
+
+User user1 = new User("Alice", -25); // Invalid age
+
+Smartphone phone1 = new Smartphone("Samsung", "Galaxy S21", 2021, user1);
+
+Sample Output:
+
+User user1 = new User("Alice", 25);
+Smartphone phone1 = new Smartphone("Samsung", "Galaxy S21", 2021, user1);
+
+User user2 = new User("Bob", 30);
+
+phone1.changeUser(user2);
+
+Sample Output:
+
+Original Smartphone Details:
+Brand: Samsung
+Model: Galaxy S21
+Release Year: 2021
+User Name: Alice
+User Age: 25
+
+Copied Smartphone Details:
+Brand: Samsung
+Model: Galaxy S21
+Release Year: 2021
+User Name: Alice
+User Age: 25
+
+Original Smartphone Details after Changing User:
+Brand: Samsung
+Model: Galaxy S21
+Release Year: 2021
+User Name: Bob
+User Age: 30
+
+Copied Smartphone Details after Changing User in Original Smartphone:
+Brand: Samsung
+Model: Galaxy S21
+Release Year: 2021
+User Name: Alice
+User Age: 25
+

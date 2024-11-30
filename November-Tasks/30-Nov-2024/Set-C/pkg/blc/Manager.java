@@ -2,22 +2,19 @@
 
 package pkg.blc;
 
-public class Manager {
+public class Manager extends Employee
+{
 
-	Employee emp;
 	
-	public Manager(Employee emp)
+	public Manager(String name, int employeeId)
 	{
-		this.emp = emp;
+		super(name, employeeId);
 	}
+	
 	
 	public void assignTask()
 	{
-		System.out.println(emp.name+" is assigning tasks.");
+		System.out.println(name+" is assigning tasks.");
 	}
 	
-	public void displayDetails()
-	{
-		System.out.println("Name : "+emp.name+", Employee Id : "+emp.employeeId);
-	}
 }

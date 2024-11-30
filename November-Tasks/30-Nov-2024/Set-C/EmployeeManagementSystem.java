@@ -6,23 +6,18 @@ public class EmployeeManagementSystem {
 
 	public static void main(String[] args) 
 	{
-
-		Employee e1 = new Employee("Alice",101);
-		Employee e2 = new Employee("Bob",102);
-		Employee e3 = new Employee("Charlie",103);
-		
 		System.out.println("Manager Details");
-		Manager m = new Manager(e1);
+		Manager m = new Manager("Alice",101);
 		m.displayDetails();
 		m.assignTask();
 		
 		System.out.println("\nDeveloper Details");
-		Developer d = new Developer(e2);
+		Developer d = new Developer("Bob",102);
 		d.displayDetails();
 		d.writeCode();
 		
 		System.out.println("\nIntern Details");
-		Intern i = new Intern(e3);
+		Intern i = new Intern("Charlie",103);
 		i.displayDetails();
 		i.learn();
 	}

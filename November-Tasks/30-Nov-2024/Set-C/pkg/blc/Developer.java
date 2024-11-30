@@ -2,22 +2,17 @@
 
 package pkg.blc;
 
-public class Developer {
-
-	Employee emp;
+public class Developer extends Employee
+{
 	
-	public Developer(Employee emp)
+	public Developer(String name, int employeeId)
 	{
-		this.emp = emp;
+		super(name, employeeId);
 	}
 	
 	public void writeCode()
 	{
-		System.out.println(emp.name+" is writing code.");
+		System.out.println(name+" is writing code.");
 	}
 	
-	public void displayDetails()
-	{
-		System.out.println("Name : "+emp.name+", Employee Id : "+emp.employeeId);
-	}
 }

@@ -2,7 +2,8 @@
 
 package pkg.blc;
 
-public class Employee {
+public class Employee
+{
 
 	String name;
 	int employeeId;

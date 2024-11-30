@@ -2,23 +2,17 @@
 
 package pkg.blc;
 
-public class Intern
-{
-	Employee emp;
-	
-	public Intern(Employee emp)
+public class Intern extends Employee
+{	
+	public Intern(String name, int employeeId)
 	{
-		this.emp = emp;
+		super(name, employeeId);
 	}
 	
 	public void learn()
 	{
-		System.out.println(emp.name+" is learning.");
+		System.out.println(name+" is learning.");
 	}
 	
-	public void displayDetails()
-	{
-		System.out.println("Name : "+emp.name+", Employee Id : "+emp.employeeId);
-	}
 }
 

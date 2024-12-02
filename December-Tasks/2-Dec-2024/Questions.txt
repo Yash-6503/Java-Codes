@@ -84,7 +84,7 @@ Take Main class is given to you with the main Method. Use this class to test you
 Test Case 1: 
 --------------
 Valid Input for Employee
-Input: totalDistance = 500, totalFuelConsumed = 50
+Input: basicSalary = 15000, HRAPer = 5000, DAPer = 3000
 Expected Output:
 
 Employee Gross Salary: 23000.0

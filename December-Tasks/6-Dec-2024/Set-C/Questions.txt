@@ -1,0 +1,115 @@
+												SET-C
+---------------------------------------------------------------------------------------------------------------
+
+Question - 1
+--------------
+Suppose you are tasked with developing a booking system for a travel agency to help customers book flights, 
+hotels, and activities. Your task is to implement classes to represent these booking items and provide 
+methods to book each item.
+Booking Class:
+
+Implement a class Booking with attributes to store the name of the item and its price.
+Include a parameterized constructor to initialize these attributes.
+Implement methods bookFlight(String airlines), bookHotel(int numberOfNights), and bookActivity(String activityType) 
+to book flights, hotels, and activities respectively.
+Ensure that each booking method prints the details of the booked item, including its name, additional details
+specific to the booking type, and the price.
+
+Flight Class:
+
+Develop a subclass Flight inheriting from the Booking class.
+Implement the constructor to initialize the name of the flight and its price.
+Override the bookFlight method to include additional details such as the airline name.
+
+Hotel Class:
+
+Create another subclass Hotel inheriting from the Booking class.
+Implement the constructor to initialize the hotel name and its price.
+Override the bookHotel method to include additional details such as the number of nights.
+
+Activity Class:
+
+Implement a third subclass Activity inheriting from the Booking class.
+Implement the constructor to initialize the activity name and its price.
+Override the bookActivity method to include additional details such as the type of activity.
+
+MainBooking Class:
+
+Develop a driver class named MainBooking containing the main method to test the functionality of the booking system.
+Create instances of Flight, Hotel, and Activity classes to represent different booking items.
+Demonstrate the usage of booking methods by calling them for each booking item.
+Example Output:
+
+
+Flight Booked: Round Trip to Paris
+Airline: Air France
+Price: $500.0
+
+Hotel Booked: Luxury Suite
+Number of Nights: 5
+Price: $200.0
+
+Activity Booked: City Tour
+Activity Type: Sightseeing
+Price: $50.0
+
+---------------------------------------------------------------------------------------------------------
+
+Question-2
+--------------
+Create a base class Cricket:
+
+instance variables:
+String matchType - Represents the type of the cricket match.
+boolean isDayMatch - Indicates whether the match is played during the day (true) or at night (false).
+
+Create a parameterized constructor to initialize these variables.
+
+Methods :
+
+ getMatchDetails():
+[Print relevant message Regarding Match]
+Return an object of type Cricket.
+
+Create a subclass TestMatch:
+
+Override the getMatchDetails() 
+[Print relevant message Regarding Match]
+Return an object of type TestMatch.
+
+Create another subclass ODIMatch:
+
+Override the getMatchDetails() 
+[Print relevant message Regarding Match]
+Return an object of type ODIMatch.
+
+Create a subclass T20Match:
+
+Inherit from the Cricket class.
+Override the getMatchDetails() 
+[Print relevant message Regarding Match]
+Return an object of type T20Match.
+
+Create a test class CricketSimulator:
+
+Create objects for the base class (Cricket) and each subclass (TestMatch, ODIMatch, T20Match).
+Call the getMatchDetails() method on each object,by applying covarient concept.
+
+
+Sample Output :
+----------------------
+Preparing for a generic cricket match...
+Match Type: Generic Match
+Day Match: Yes
+
+Preparing for a Test Match...
+Match duration: 5 days. No restrictions on overs.
+Day Match: No
+
+Preparing for an ODI Match...
+Match duration: 50 overs per side.
+Day Match: Yes
+
+Preparing for a T20 Match...
+Match duration: 20 overs per side. High-intensity game.
+Day Match: Yes

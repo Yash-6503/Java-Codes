@@ -1,0 +1,93 @@
+												SET-B
+-------------------------------------------------------------------------------------------------------------------------
+
+Question - 1
+--------------
+Suppose you are tasked with developing a Java program to manage bank accounts for both savings and checking purposes. 
+Your task is to implement classes for bank accounts, allowing customers to deposit money, withdraw funds, 
+and earn interest on savings accounts.
+
+BankAccount Class:
+
+Implement a class BankAccount with an instance variable balance to represent the current balance.
+Include a parameterized constructor to initialize the balance.
+Implement methods deposit(double amount) and withdraw(double amount) to allow customers to deposit and withdraw money.
+Ensure that the withdraw() method checks for sufficient funds and prints an appropriate message if the balance is insufficient.
+
+SavingsAccount Class:
+
+Develop a subclass SavingsAccount inheriting from the BankAccount class.
+Include an additional instance variable interestRate to represent the annual interest rate.
+Implement a method calculateInterest() to calculate and add interest to the account balance based on the interest rate.
+   [interest = balance * interestRate / 100]
+Ensure that the interest is added only for savings accounts.
+
+CheckingAccount Class:
+
+Create another subclass CheckingAccount inheriting from the BankAccount class.
+This class does not have any additional functionality beyond the base class.
+
+MainBank Class:
+
+Develop a driver class named MainBank containing the main method to test the functionality of the bank account system.
+Create instances of both SavingsAccount and CheckingAccount classes to represent different types of accounts.
+Demonstrate the usage of deposit, withdraw, and interest calculation methods for savings accounts.
+Example Output:
+
+
+Previous Balance: 1000.0
+Deposited: 200.0
+Interest added: 10.0
+Savings Account Balance: 1210.0
+
+Previous Balance: 1000.0
+Deposited: 300.0
+Withdrawn: 100.0
+Checking Account Balance: 1200.0
+
+-------------------------------------------------------------------------------------------------------
+
+Question-2
+--------------
+Create a base class Theater:
+
+Declare the following instance variables:
+String theaterName - Represents the name of the theater.
+boolean is3DEnabled - Indicates whether the theater supports 3D movies (true) or not (false).
+
+Create a parameterized constructor to initialize these variables.
+
+Declare a method getTheaterDetails():
+[print the  details ]
+Return an object of type Theater.
+
+
+Create a subclass IMAXTheater:
+
+Inherit from the Theater class.
+
+Override the getTheaterDetails()
+
+Return an object of type IMAXTheater.
+
+Create another subclass PremiumTheater:
+
+Inherit from the Theater class.
+
+Override the getTheaterDetails() 
+
+Return an object of type PremiumTheater.
+
+Create another subclass RegularTheater:
+
+Override the getTheaterDetails() 
+
+Return an object of type RegularTheater.
+
+
+[For each subclass, implement additional messages for unique features like seating, ticket pricing, or sound quality.]
+
+Create a test class MovieExperienceSimulator:
+
+Create objects for the base class (Theater) and each subclass (IMAXTheater, PremiumTheater, RegularTheater).
+Call the getTheaterDetails() method on each object. by applying covarient concept.

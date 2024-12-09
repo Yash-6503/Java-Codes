@@ -12,7 +12,7 @@ abstract class Student
     {
         this.studentName = studentName;
         this.studentClass = studentClass;
-        this.totalNoOfStudents = totalNoOfStudents;
+        this.totalNoOfStudents += totalNoOfStudents;
     }
 
     public Student(){}

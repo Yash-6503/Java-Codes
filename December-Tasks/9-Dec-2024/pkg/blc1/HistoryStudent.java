@@ -23,7 +23,12 @@ public class HistoryStudent extends Student
     @Override
     public int getPercentage(){
         int percent = (historyMarks + civicsMarks) / 2;
-        System.out.print("History Student Percentage: ");
+        System.out.print("Percentage: ");
         return percent;
+    }
+
+    @Override
+    public String toString(){
+        return "Student Name: "+studentName+"\nStudent Class: "+studentClass;
     }
 }

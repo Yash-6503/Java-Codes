@@ -25,9 +25,12 @@ public class ScienceStudent extends Student
     @Override 
     public int getPercentage(){
         int percent = (physicsMarks + chemistryMarks + mathsMarks)/3;
-        System.out.print("Science Student Percentage: ");
+        System.out.print("Percentage: ");
         return percent;
     }
 
-
+    @Override
+    public String toString(){
+        return "Student Name: "+studentName+"\nStudent Class: "+studentClass;
+    }
 }

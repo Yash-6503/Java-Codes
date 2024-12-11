@@ -12,8 +12,18 @@ public class DebitCard extends Payment
 	{
 		super(balance);
 		if(lastFourDigits > 0 && pinNumber > 0 && amount > 0) {
-			this.lastFourDigits = lastFourDigits;
-			this.pinNumber = pinNumber;
+			if(lastFourDigits > 999 && lastFourDigits <= 9999) {
+				this.lastFourDigits = lastFourDigits;				
+			}else {
+				System.out.println("Error: Last Four Digits must be 4 Digits only.");
+				System.exit(0);
+			}
+			if(pinNumber > 999 && pinNumber <= 9999) {
+				this.pinNumber = pinNumber;
+			}else {
+				System.out.println("Error: Pin Number must be 4 Digits only.");
+				System.exit(0);
+			}
 			this.amount = amount;
 		}else if(lastFourDigits <= 0 && pinNumber > 0 && amount > 0) {
 			System.out.println("Error: Invalid Last Four Digits");

@@ -1,3 +1,6 @@
+MCQs based on Functional interface
+-------------------------------------------------------
+
 1.Choose the correct output of the following program
 
 interface Add
@@ -15,6 +18,9 @@ public class FunctionalInterface {
 	}
 }
 
+Output
+10
+------------------------------------------------------------------------------
 
 2.Choose the correct output of the following program
 @FunctionalInterface
@@ -32,6 +38,9 @@ public class FunctionalInterface {
 	}
 }
 
+Output
+9261
+------------------------------------------------------------------------------
 
 3.What is the output of the following program
 interface Add
@@ -47,6 +56,9 @@ public class FunctionalInterface {
 	}
 }
 
+Output
+Compilation error: multiple non-overriding abstract methods found in interface Add
+------------------------------------------------------------------------------
 
 4.What is the output of the following program
 @FunctionalInterface
@@ -61,7 +73,10 @@ public class FunctionalInterface {
 	}
 }
 
-
+Output 
+Error Incompatable type error method return type is int.
+also String cannot be converted to int
+------------------------------------------------------------------------------
 
 5.Choose the correct output of the following program
 public class FunctionalInterface {
@@ -71,6 +86,9 @@ public class FunctionalInterface {
 	}
 }
 
+//Output 
+error
+------------------------------------------------------------------------------
 
 6.What is the output of the following code
 @FunctionalInterface
@@ -92,6 +110,11 @@ public class FunctionalInterfaceExample
 	}
 }
 
+Output
+HAI Welcome to
+HAI NARESHIT
+------------------------------------------------------------------------------
+
 7.By using FunctionalInterface annotation following code is correct or not?
 @FunctionalInterface
 interface NIT
@@ -100,6 +123,10 @@ interface NIT
 	String newInterface();
 	
 }
+
+Output 
+Error: Compilation error multiple non-overriding abstract methods found in interface NIT
+------------------------------------------------------------------------------
 
 8.What is the output of the following code
 @FunctionalInterface
@@ -134,6 +161,10 @@ public class FunctionalInterfaceExample implements NIT{
      return x*x;
  }
 }
+
+Output
+30 20 125 5 36
+------------------------------------------------------------------------------
 
 9.What is the output of the following code
 @FunctionalInterface
@@ -170,12 +201,20 @@ public class FunctionalInterfaceExample{
  }
 }
 
+Output
+30 20 125 5 36
+------------------------------------------------------------------------------
+
 10. public class FunctionalInterfaceExample{
 	public static void main(String[] args) {
 		Function<String, String> fun = str -> str.substring(2,5);
 		System.out.println(fun.apply("Hyderabad"));
 	}
 }
+
+Output 
+Error: Function<><> is not imported from java.util.function package
+------------------------------------------------------------------------------
 
 11.By using FunctionalInterface annotation following code is correct or not?
 @FunctionalInterface
@@ -192,6 +231,10 @@ interface NIT
 	}
 }
 
+Output
+Valid
+------------------------------------------------------------------------------
+
 12.Is there any error in following code?
 @FunctionalInterface
 interface NIT
@@ -201,6 +244,9 @@ interface NIT
 	String toString();	
 }
 
+Output
+Valid
+------------------------------------------------------------------------------
 
 13.Is there any error in following code?
 @FunctionalInterface
@@ -213,6 +259,10 @@ interface NIT
 	void notify();
 	
 }
+
+Output
+we can't Override wait() & notify() methods because they are final methods
+------------------------------------------------------------------------------
 
 14.What is the output of the following code
 public class FunctionalInterfaceExample{
@@ -229,6 +279,10 @@ public class FunctionalInterfaceExample{
 	}
 }
 
+Output
+Compilation error because Predicate is undefined and not imported from java.util.function.* package.
+------------------------------------------------------------------------------
+
 15.What is the output of the following code
 public class FunctionalInterfaceExample{
 	public static void main(String[] args) 
@@ -244,6 +298,9 @@ public class FunctionalInterfaceExample{
 	}
 }
 
+Output
+Compilation error because Predicate is undefined and not imported from java.util.function.* package.
+------------------------------------------------------------------------------
 
 16.What is the output of the following code
 interface NIT
@@ -258,6 +315,10 @@ public class Java8 {
 		System.out.println(i);
 	}
 }
+
+Output
+7
+------------------------------------------------------------------------------
 
 17.What is the output of the following code?
 @FunctionalInterface
@@ -281,6 +342,11 @@ public class Java8 {
 	}
 }
 
+Output
+125
+Welcomem to NareshIT
+------------------------------------------------------------------------------
+
 18.What is the output of the following code?
 public class Java8 {
 	public static void main(String[] args) {
@@ -289,6 +355,9 @@ public class Java8 {
 	}
 }
 
+Output
+Compilation error because Consumer is undefined and not imported from java.util.function.* package.
+------------------------------------------------------------------------------
 
 19. What is the output of the following code?
 public class Java8 {
@@ -298,6 +367,9 @@ public class Java8 {
 	}
 }
 
+Output
+Compilation error because Consumer is undefined and not imported from java.util.function.* package.
+------------------------------------------------------------------------------
 
 20. What is the output of the following code?
 public class Java8 {
@@ -306,3 +378,7 @@ public class Java8 {
 		value.accept("NareshIT");
 	}
 }
+
+Output
+Compilation error because Consumer is undefined and not imported from java.util.function.* package.
+------------------------------------------------------------------------------

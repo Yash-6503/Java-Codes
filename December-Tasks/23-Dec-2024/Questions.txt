@@ -1,0 +1,112 @@
+Ques - 1
+-------------
+Object Creation and Attribute Update using Functional Interface and Consumer.
+
+You are tasked with creating a Java program that utilizes a custom functional interface 
+for object creation and updates object attributes using a Consumer. .
+
+Custom Functional Interface: ObjectCreator
+
+Create a functional interface ObjectCreator with the following specifications:
+Interface Name: ObjectCreator
+Method Signature: Object create(int id, String name)
+Return Type: Object
+Parameters: id (int): , name (String)
+
+
+BLC Class: Student
+Create a class Student. This class should include:
+
+Attributes:
+
+int id: private 
+String name: private
+
+Constructor:
+Student(int, String):
+Initializes the id and name attributes of the object.
+
+Method:
+void updateName(Consumer<String> nameUpdater):
+Accepts a Consumer that updates the name attribute of the object based on the provided logic.
+Override toString method to display object details.
+
+Main Class: ObjectCreatorMain
+In the main method of the ObjectCreatorMain class:
+
+Define and use a lambda expression to instantiate a CustomObject using the ObjectCreator interface. 
+The lambda should return  an object of Student with id and name.
+Call create method and store the object.
+
+Use a Consumer lambda expression to update the name attribute of the created Student object. 
+The Consumer should modify the name to include a suffix or any transformation logic.
+
+Print the details of the updated Student instance to verify its attributes.
+
+Test Case 1: Basic Creation and Update
+Input:
+id: 1
+name: "John Doe"
+Operation:
+Update the name to "Jane Updated"
+Expected Output:
+Updated Student Details:
+Student{id=1, name='Jane Updated'}
+
+Test Case 2: Different Name Update
+Input:
+id: 2
+name: "Alice"
+Operation:
+Update the name to "Alice Johnson"
+Expected Output:
+Updated Student Details:
+Student{id=2, name='Alice Johnson'}
+
+Test Case 3: No Name Update
+Input:
+id: 3
+name: "Bob"
+Operation:
+No update applied
+Expected Output:
+Updated Student Details:
+Student{id=3, name='Bob'}
+
+=====================================================================================================
+
+Ques - 2
+--------------
+Adjusting Classroom Chairs Using UnaryOperator
+You are tasked with implementing a Java program that allows adjustments to the number of 
+chairs in a classroom based on the student count entered by the user. Utilize the UnaryOperator 
+interface to encapsulate the logic for modifying and returning the updated ClassRoom object.
+
+ClassRoom Class(BLC):
+Create a ClassRoom class with the following attributes and methods:
+
+Attributes:
+chairs: int : private  
+
+Methods:
+getChairs(): int : public
+setChairs(int chairs): void : public
+Override toString().
+
+
+modifiers : public :  static
+return type :  UnaryOperator<ClassRoom> 
+method name : adjustChairs()
+parameter :  ClassRoom 
+Logic: 
+Prompts the user to enter the number of students.
+Adjusts the number of chairs based on the following rules:
+If the student count exceeds the current number of chairs, increase the chairs by based on student count.
+If the student count is less than the current number of chairs, decrease the chairs based on student count.
+Returns the updated ClassRoom object after modification.
+
+ElC class Tester : 
+In the main method :
+Create an instance of ClassRoom with an initial number of chairs (e.g., 100).
+Apply the adjustChairs() method using UnaryOperator to adjust the number of chairs based on user input.
+Print the adjusted number of chairs in the classroom.

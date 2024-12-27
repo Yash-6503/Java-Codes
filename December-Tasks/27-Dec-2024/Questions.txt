@@ -1,0 +1,37 @@
+CODING PROGRAMS :
+-----------------
+EXCEPTION HANDLING LAB EXERCISE STAGE-1
+========================================
+1. Exception and Messages…
+a. Write a program to create a class ‘SimpleExceptionDemo’ ,which implements main method.
+b. This program should read two integer numbers for the variables a and b from console using Scanner class.
+c. If you enter any other character except number (0 - 9 ) then the error is caught by InputMisMatchException object.
+d. After that using following methods print the information about the error occurring causes in the console. 
+getMessages() printStackTrace() println() toString()
+
+----------------------------------------------------------------------
+2. ArrayIndexOutOfBoundException…
+a. Write a program to create a class ‘ArrayIndexExceptionDemo’ which implements main method.
+b. Inside main method create an array of int type as follows.
+int a[] = new int[2];
+c. Now try to print the value of a[3] in the console where handle the Exceptions coming from this line using try catch.
+d. In the catch block handle this exception using ArrayIndexOutOfBound Exception and print appropriate message in 
+the console from this Exception.
+
+----------------------------------------------------------------------
+3. IllegalStateException…
+a. Write a program to create a class ‘IllegalStateExceptionDemo’ which implements a method as follows 
+static void throwIllegalException( ) { try{ throw new IllegalStateException("MyException"); } 
+catch(IllegalStateException objA){ System.out.println("caught:" +objA); } }
+b. Implement the main method, and from main method call the above method.
+c. Check the output of the program.
+
+------------------------------------------------------------------------
+4. ClassNotFoundException…
+a. Write a program to create a class ‘ClassNotFoundExpDemo’ which implements default constructor as follows ,
+public ClassNotFoundExpDemo { Class c; try { c = Class.forName("TestClass"); } catch (ClassNotFoundException e) 
+{ // deal with the exception here ... e.printStackTrace(); } }
+b. Implement the main method and inside main method create an object of ClassNotFoundExpDemo class.
+c. Now check the O/P.
+
+-------------------------------------------------------------------------

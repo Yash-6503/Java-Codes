@@ -15,15 +15,19 @@ public class Example3
 		
 		Supplier<String> s1 = () -> {
 			Random random = new Random();
-			int randomNumber = random.nextInt(10000);
-			return "NIT"+randomNumber;
+			// int randomNumber = random.nextInt(10000);
+			double randomNumber =  Math.random() * 10000;
+			return "NIT"+(int)randomNumber;
 		};
 		
 		System.out.println("Generated random string: "+s1.get());
 		
 		Supplier<Integer> s2 = () ->{
 			Random random = new Random();
-			int randomNumber = random.nextInt(57,92);
+			int max = 57;
+			int min = 92;
+			// int randomNumber = random.nextInt(57,92);
+			int randomNumber = (int) (Math.random() * (max-min+1))+min;
 			return randomNumber;
 		};
 		

@@ -1,0 +1,105 @@
+                                   SET - A
+------------------------------------------------------------------------------------------------
+Ques - 1
+------------
+Create two user-defined functional interfaces:
+
+Operation Interface:
+A functional interface with the method perform(int a, int b) that returns an int.
+The perform method should implement complex mathematical operations based on conditions.
+Conditions:
+If both a and b are greater than 0, return the sum of the squares of a and b.
+If the above condition is not met, return the sum of a and b.
+
+Greeting Interface:
+A functional interface with the method greet(String name, int age) that returns void.
+The greet method should implement intricate logic based on age and name length.
+Conditions:
+If the age is 18 or older, print a greeting indicating that the person is an adult.
+If the length of the name is greater than 5 and the age is less than 18, print a greeting indicating 
+that the person has a long name and is not an adult yet.
+If none of the above conditions are met, print a suitable greeting.
+
+In the main method:
+Use an anonymous inner class to create an instance of the Operation interface with the implemented 
+complex mathematical operations.
+Use another anonymous inner class to create an instance of the Greeting interface with the implemented 
+intricate logic based on age and name length.
+Execute the complex mathematical operation with sample values (e.g., a = 4, b = 3) and print the result.
+Execute the complex greeting logic with sample age and name values (e.g., age = 38, name = "Virat") 
+and print the personalized message.
+
+===========================================================================================
+
+Ques: 2)
+------------
+Create an abstract class named BankAccount with the following attributes and methods:
+
+Attributes:
+
+accountHolder (String): representing the account holder's name.
+balance (double): indicating the current balance in the account.
+Methods:
+
+deposit(double amount): abstract method to deposit a specified amount into the account.
+withdraw(double amount): abstract method to withdraw a specified amount from the account.
+displayAccountInfo(): abstract method that should return a string representing account information.
+Additionally, implement a common method:
+
+displayBalance(): a method with a default implementation in the abstract class that returns a 
+string displaying the current balance.
+Create a concrete subclass that extends BankAccount:
+
+SavingsAccount:
+Create an additional attribute interestRate (double) for the savings account interest rate.
+Initialize the attributes using a parameterized constructor.
+Implement the deposit, withdraw, and displayAccountInfo methods.
+In a BankingMain class:
+
+Create instances of both BankAccount and SavingsAccount.
+Demonstrate the usage of all methods, including the common displayBalance method.
+
+==============================================================================================
+
+Ques: 3)
+------------
+Create two user-defined functional interfaces:
+
+BooleanOperation Interface:
+
+A functional interface with the method evaluate(int a, int b) that returns a boolean.
+
+
+logic to perform:
+
+Return true if a is divisible by 3, b is divisible by 5, and the sum of a and b is an even number; 
+otherwise, return false.
+
+
+DoubleFunction Interface:
+
+A functional interface with the method calculate(double x, double y) that returns a double.
+
+
+logic to perform:
+
+If x is positive, y is negative, and x is an even number, return x cubed divided by y (if y is not zero) 
+or 1 (if y is zero).
+
+If x is negative, y is positive, and y is an odd number, return the product of x, and y.
+
+If none of the above scenarios are met, return the sum of x and y.
+
+
+In the main method:
+
+Use an anonymous inner class to create an instance of the BooleanOperation interface with the implemented  boolean logic.
+
+Use another anonymous inner class to create an instance of the DoubleFunction interface with the implemented 
+logic based on measurements.
+
+Execute the boolean operation with sample values (e.g., a = 9, b = 15) and print the result.
+
+Execute the double calculation with sample values (e.g., x = -6.0, y = 3.0) and print the calculated result.
+
+==============================================================================================

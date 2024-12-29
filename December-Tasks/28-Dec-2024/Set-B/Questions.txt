@@ -1,0 +1,86 @@
+                                        SET - B
+-----------------------------------------------------------------------------------------------
+
+Ques: 1) 
+-----------
+Define a user defined class, SensorData , with private attributes double temperature, double humidity. 
+To initialize these develop one parameterised
+constructor and provide setters and getters.
+
+Take main method in SensorData class and use Function(Predefined Functional interface) to analyse the 
+temperature, which should take a SensorData instance as a parameter and use a functional interface to return 
+the temperature and store and display the result.
+Double apply(SensorData Data).
+
+Take one local variable double threshold  with temperature 25.0.
+Define a second lambda expression using Function<Double, Boolean> type,  that takes a Double (temperature) as a 
+parameter and returns true if the temperature is above a specified threshold (e.g., 25 degrees Celsius). 
+Apply this function to check if the calculated temperature is above the given threshold and printf true or false as per return value.
+Boolean apply(Double temperature);
+
+=================================================================================================
+
+Ques: 2)
+-----------
+Abstract Task Management System
+
+Create an abstract class named Task with the following attributes and methods:
+
+Attributes:
+
+taskName (String): representing the name of the task.
+priority (int): indicating the priority level of the task.
+Methods:
+
+completeTask(): abstract method that should return a string indicating the completion status of the task.
+displayTaskInfo(): abstract method that should return a string representing task information.
+Additionally, implement a common method:
+
+displayPriority(): a method with a default implementation in the abstract class that returns a string 
+displaying the priority level.
+Create a concrete subclass that extends Task:
+
+AssignmentTask:
+Create an additional attribute dueDate (String) for the assignment deadline.
+Initialize the attributes using a parameterized constructor.
+Implement the completeTask and displayTaskInfo methods.
+In a TaskMain class:
+
+Create instances of both Task and AssignmentTask.
+Demonstrate the usage of all methods, including the common displayPriority method.
+
+=================================================================================================
+
+Ques: 3)
+-----------
+Create two new functional interfaces, NumberChecker and CharChecker.
+
+NumberChecker Interface:
+
+Functional Interface with a method checkNumber that takes an int parameter and returns a boolean.
+
+CharChecker Interface:
+
+Functional Interface with a method checkChar that takes a char parameter and returns void.
+
+Main class:
+
+Create an anonymous inner class to implement the checkNumber method in the NumberChecker interface. 
+This method should determine whether a given integer is prime.
+
+Create another anonymous inner class to implement the checkChar method in the CharChecker interface. 
+This method should check if the ASCII value of a given character is prime.
+
+Introduce a static method named isPrime in the Main class to handle the prime checking logic for both 
+numbers and ASCII values. This method should take an int parameter and return a boolean.
+
+
+In the main method:
+
+Create an instance of the NumberChecker interface using an anonymous inner class and execute the checkNumber 
+method with a sample integer value (e.g., 7). Print the result.
+
+Create an instance of the CharChecker interface using an anonymous inner class and execute the checkChar 
+method with a sample character (e.g., 'A'). Print the result.
+
+================================================================================================

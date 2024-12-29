@@ -1,0 +1,91 @@
+                                    SET - C
+---------------------------------------------------------------------------------------------
+
+Ques: 1)
+----------
+Create two user-defined functional interfaces:
+
+BooleanOperation Interface:
+A functional interface with the method evaluate(int a, int b) that returns a boolean.
+
+logic to perform:
+Return true if a is divisible by 3, b is divisible by 5, and the sum of a and b is an even number; 
+otherwise, return false.
+
+DoubleFunction Interface:
+A functional interface with the method calculate(double x, double y) that returns a double.
+
+logic to perform:
+If x is positive, y is negative, and x is an even number, return x cubed divided by y (if y is not zero) 
+or 1 (if y is zero).
+If x is negative, y is positive, and y is an odd number, return the product of x, y, x, and y.
+If none of the above scenarios are met, return the sum of x and y.
+
+In the main method:
+Use an anonymous inner class to create an instance of the BooleanOperation interface with the implemented  boolean logic.
+Use another anonymous inner class to create an instance of the DoubleFunction interface with the implemented 
+logic based on measurements.
+Execute the boolean operation with sample values (e.g., a = 9, b = 15) and print the result.
+Execute the double calculation with sample values (e.g., x = -6.0, y = 3.0) and print the calculated result.
+
+====================================================================================================
+
+Ques: 2)
+-----------
+Create an abstract class named Employee with the following attributes and methods:
+
+Attributes:
+
+name (String): representing the name of the employee.
+employeeId (int): containing the employee ID.
+Methods:
+
+calculateSalary(): abstract method that should return the salary of the employee.
+generatePayStub(): abstract method that should return a string displaying the pay stub.
+Additionally, implement a common method:
+
+displayEmployeeInfo(): a method with a default implementation in the abstract class that returns a 
+string displaying general employee information.
+Create a concrete subclass that extends Employee:
+
+Manager:
+Create an additional attribute numberOfSubordinates (int) for the number of subordinates the manager oversees.
+Initialize the attributes using a parameterized constructor.
+Implement the calculateSalary and generatePayStub methods.
+Include a getter method for retrieving the number of subordinates.
+In an EmployeeMain class:
+
+Create instances of both Employee and Manager.
+Demonstrate the usage of all methods, including the common displayEmployeeInfo method.
+
+==================================================================================================
+
+Ques: 3)
+----------
+User Class:
+
+Create a User class with fields for username and isSubscribed (a boolean indicating the subscription status).
+Include a constructor and a toString method.
+
+class SubscriptionChecker:
+
+Supplier for User Information:
+
+Implement a private static method named generateUser with return type User, that uses a Supplier<User> to 
+generate information about a user (e.g., username: "JohnDoe", subscription status: true) and returning an Object of User.
+
+Predicate for Subscription Check:
+
+Implement a private static method named checkSubscriptionStatus with parameter User, that uses a Predicate<User> 
+to check if a given user is subscribed.
+
+Methods for Printing Information:
+
+Implement private static methods printUserInformation and printSubscriptionStatus with parameter as User , 
+to print user information and subscription status, respectively.
+
+
+In the main method, demonstrate the use of the methods by generating user information, printing it, 
+checking the subscription status, and printing the result.
+
+=====================================================================================================

@@ -11,6 +11,7 @@ This class involves two custom exceptions: a checked exception (SeatUnavailableE
 insufficient seats for the specified reservation.
 
 * InvalidReservationException (Unchecked Exception):
+------------------------------------------------------
 ->This exception should be thrown when an attempt is made to reserve seats when no seats are available.
 
 

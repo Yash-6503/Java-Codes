@@ -1,0 +1,21 @@
+1. What is an Exception?
+2. How the Exceptions are handled in java? Or Explain Exception Handling mechanism in Java?
+3. What is the difference between error and exception?
+4. Can we keep other statements in between try-catch & finally block?
+5. Can we write only try block without catch and finally block?
+6. Explain the hierarchy of Exceptions in java?
+7. What are RuntimeExceptions in java?
+8. What are checked and unchecked exceptions in java?
+9. Can we throw an exception manually if yes then how?
+10. What is the use of throws keyword.
+11. What is the difference between final(class,variable), finally(block) and finallize(method) in java?
+12. How do you create customized exceptions in java?
+13. What is the use of printStackTrace() method?
+14. What are the benefits of try with resources?
+15. What is try block and its use?
+16. What is catch block and its use?
+17. What is finally block and its use?
+18. What are enhancement came in Exception Handling in Java 1.7v
+19. What is the syntax of writing try with multiple catch blocks. **(while writing maintain hierarchy as per diagram)
+20. Can we write try with finally block?
+21. How can we stop the execution of finally block?

@@ -3,6 +3,6 @@
 public class InsufficientQuantityException extends Exception
 {
     public InsufficientQuantityException(String errorMessage){
-        this.errorMessage = errorMessage;
+        super(errorMessage);
     }
 }

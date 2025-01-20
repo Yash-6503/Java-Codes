@@ -1,4 +1,8 @@
+COVID-19 vaccine booking application
+-----------------------------------------------
+
 Objective:
+----------------
 Design a COVID-19 vaccine booking application that allows users to check their eligibility based on
 age and health conditions. Users who meet the eligibility criteria can book a dose, and the application
 should handle concurrent user interactions using threads.

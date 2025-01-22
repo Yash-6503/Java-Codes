@@ -1,0 +1,14 @@
+Question:
+----------
+
+Write a java program to print all pure prime numbers between the 10 to 100.
+
+conditions
+------------
+1. given number must be a prime.
+2. reverse of number should also be prime.
+3. Each digits of a number should also prime.
+
+If all of above conditions mathched then you can say that a number is pure prime.
+
+-------------------------------------------------------------------------------------------------

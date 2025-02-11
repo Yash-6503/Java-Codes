@@ -35,7 +35,7 @@ Implement a method printBill that takes a FoodCustomer object and a bill amount 
 
 FoodOrderServiceTester Class:
 
-Create a class named FoodOrderServiceTester with a main method.
+Create a class named  with a main method.
 
 Inside the main method:
 

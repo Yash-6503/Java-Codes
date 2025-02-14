@@ -68,3 +68,25 @@ public class TestProduct
 	}
 
 }
+
+/* output
+Sorted pid in ascending
+Product [pid=111, pname=Mobile]
+Product [pid=222, pname=AirBuds]
+Product [pid=333, pname=Laptop]
+
+Sorted pid in descending
+Product [pid=333, pname=Laptop]
+Product [pid=222, pname=AirBuds]
+Product [pid=111, pname=Mobile]
+
+Sorted name based on alphabetical order
+Product [pid=222, pname=AirBuds]
+Product [pid=333, pname=Laptop]
+Product [pid=111, pname=Mobile]
+
+Sorted name based on reverse order
+Product [pid=111, pname=Mobile]
+Product [pid=333, pname=Laptop]
+Product [pid=222, pname=AirBuds]
+*/

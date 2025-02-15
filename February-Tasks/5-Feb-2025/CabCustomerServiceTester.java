@@ -16,8 +16,6 @@ class CabCustomer
 	private int distance; 
 	private String phone;
 
-	
-	
 	public CabCustomer() {
 		
 	}

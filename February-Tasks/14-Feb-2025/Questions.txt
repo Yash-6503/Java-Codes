@@ -1,0 +1,51 @@
+Ques - 1
+-----------
+You are tasked with implementing a simple Java program that manages a collection of fruits and their quantities using a HashMap. 
+Create a ELC class FruitInventoryManagement :
+Add fruits and their quantities to the HashMap.
+Display the total number of entries in the HashMap.
+Check if the HashMap is empty.
+Retrieve and print the quantity of a specific fruit.
+Check if a specific fruit exists in the HashMap.
+Check if a specific quantity exists in the HashMap.
+
+Sample Output :
+Added Apple: 50
+Added Banana: 30
+Added Orange: 20
+Total number of entries: 3
+HashMap is not empty.
+
+Quantity for Apple: 50
+Quantity for Banana: 30
+
+Orange exists in the records.
+Mango does not exist in the records.
+
+Quantity 20 exists in the records.
+Quantity 100 does not exist in the records.
+
+==============================================================================================================
+
+Ques - 2
+-----------
+
+You are tasked with implementing a Java program that demonstrates various operations on HashMap such as merging two HashMap.
+Create two HashMap<String, Integer> instances to store fruit names as keys and their quantities as values.
+Merge the second HashMap into the first one using the putAll method.
+Use the putIfAbsent method to add an entry to the HashMap only if the key is not already present.
+Use the replace method to update the value for a specific key.
+Use the remove method to delete an entry from the HashMap based on the key.
+
+Example Output :
+After merging fruitInventory2 into fruitInventory1:
+{Apple=50, Banana=25, Orange=20, Mango=40}
+
+After using putIfAbsent:
+{Apple=50, Banana=25, Orange=20, Mango=40, Grapes=35}
+
+After using replace:
+{Apple=50, Banana=25, Orange=25, Mango=40, Grapes=35}
+
+After using remove:
+{Apple=50, Banana=25, Orange=25, Grapes=35}

@@ -13,6 +13,7 @@ Your program should use the PriorityQueue class from the java.util package.
 The elements should be added in the specified order: "Red", "Green", "Orange", "White", "Black".
 Display the elements of the PriorityQueue after all elements have been added.
 -------------------------------------------------------------------------------------------------------
+
 Que-2
 ____________________________
 Create a Java program that demonstrates how to merge two PriorityQueue instances. 
@@ -37,6 +38,7 @@ Priority Queue1: [Green, Red, Orange]
 Priority Queue2: [Black, White, Pink]
 New Priority Queue1: [Black, Green, Orange, Red, White, Pink]
 -------------------------------------------------------------------------------------------------------
+
 Que-3
 ____________________________
 Problem Statement:

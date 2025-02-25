@@ -1,7 +1,5 @@
 // WAP to print all the Prime Numbers from an Integer Array.
 
-package com.StreamAPI.Task1;
-
 import java.util.*;
 import java.util.stream.Collectors;
 

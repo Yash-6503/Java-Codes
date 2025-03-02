@@ -1,0 +1,62 @@
+Map<K,V> interface :
+---------------------
+As we know Collection interface is used to hold single Or individual object but Map interface will hold group of objects in the form key and value pair. {key = value} 
+
+Map<K,V> interface is not the part the Collection, It is a separate interface.
+
+Before Map interface We have Dictionary<K,V>(abstract class) class and it is extended by Hashtable<K,V> class in JDK 1.0V
+
+Map interface works with key and value pair introduced from 1.2V.
+
+Here key and value both are objects.
+
+Here key must be unique and value may be duplicate.
+
+Each key and value pair is creating one Entry.(Entry is nothing but the combination of key and value pair)
+
+public interface Map<K,V>
+{   
+     public interface Entry<K,V>
+      {
+         //key and value
+      }
+}
+
+How to represent this entry interface (Map.Entry in .java) [Map$Entry in .class]
+
+In Map interface whenever we have a duplicate key then the old key value will be replaced by new key(duplicate key) value.
+
+Map interface has defined forEach(BiConsumer cons) method to work with group of Objects.It does not extends Iterable interface.
+
+Iterator and ListIterator we can't work directly using Map.
+
+================================================================================================================
+
+Methods of Map<K,V> interface :
+--------------------------------
+
+1) Object put(Object key, Object value) :- To insert one entry in the Map collection. It will return the value of old Object key, if the key is already available(Duplicate key), If key is not available (new key) then it will return null.
+
+2) Object putIfAbsent(Object key, Object value) :- It will insert an entry, if and only if, key is not available , if the key is already available then it will not insert the Entry to the Map Collection
+
+
+3) Object get(Object key) :- It will return  corresponding value of the key, if the key is not present then it will return null.
+
+4) Object getOrDefault(Object key, Object defaultValue) :- To avoid null value this method has been introduced from JDK 1.8V, here we can pass some defaultValue to avoid the null value.
+
+
+5) boolean containsKey(Object key) :- To Search a particular key
+
+6) boolean containsValue(Object value) :- To Search a particular value
+
+7) int size() :- To count the number of Entries.
+
+8) remove(Object key) :- One complete entry will be removed.
+
+9) void clear() :- Used to clear the Map
+
+10) boolean isEmpty() :- To verify Map is empty or not?
+
+11) void putAll(Map m) :- Merging of two Map collection
+
+

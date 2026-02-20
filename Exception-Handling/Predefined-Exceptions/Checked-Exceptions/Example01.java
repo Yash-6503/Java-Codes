@@ -8,6 +8,7 @@ public class Example01 {
 
     public static void main(String[] args) {
         try {
+            @SuppressWarnings("resource")
             FileReader file = new FileReader("data1.txt"); // may throw IOException
             System.out.println("File opened successfully");
         } catch (IOException e) {
